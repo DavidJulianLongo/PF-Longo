@@ -143,7 +143,52 @@ footer{
     background-color: #cc275e;
 }
 
+/****************** Sobre mi   ***************************/
+.cont-article-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 12.5rem 0;
+}
 
+.art-card-sobre{
+    width: 60%;
+    display: flex;
+    padding: 1.25rem;
+    box-shadow: 0 0 .9375rem rgba(0, 0, 0, .1);
+    transition: all .5s ease;
+}
+
+.art-card-contenido-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3.125rem;
+    margin-left: 1.25rem;
+}
+
+
+.art-card-sobre:hover{
+    background-color: #d9d9d923;
+    box-shadow: 0 0 .9375rem #F38FB0;
+}
+
+.art-card-contenido-sobre h2{
+    margin-bottom: 3.125rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #555555;
+}
+
+
+.art-card-contenido-sobre p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #555555;
+    margin-bottom: 3.125rem;
+}
 
 
 /******************  Servicios  **************************/
