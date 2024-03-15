@@ -130,7 +130,7 @@ footer{
     padding: 1rem 1.5rem ;
     border-radius: .5rem;
     text-align: center;
-    transition: all .3s ease-out;
+    transition: all .3s ease;
 }
 
 .btn:hover{
@@ -139,7 +139,7 @@ footer{
 }
 
 .btn:active{
-    transform: scale(.8);
+    transform: scale(.97);
     background-color: #cc275e;
 }
 
