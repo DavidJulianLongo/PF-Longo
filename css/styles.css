@@ -532,6 +532,11 @@ footer{
     .cont-principal{
         margin: 0 5rem;
     }
+
+    .cont-principal h1{
+        font-size: 6rem;
+    }
+
 }
 
 
