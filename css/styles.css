@@ -92,7 +92,7 @@ footer{
 .cont-principal{
     display: flex;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 90vh;
 }
 
 
@@ -521,6 +521,80 @@ footer{
 .galeria-familiar img:nth-child(13){
     grid-column: 3/5;
     grid-row: 4/6;
+}
+
+
+
+
+/****************************************************************/
+
+@media (max-width: 1680px){
+    .cont-principal{
+        margin: 0 5rem;
+    }
+}
+
+
+
+
+@media (max-width: 1440px) {
+    .cont-header{
+        margin: 0 3rem;
+    }
+    .nav-bar{
+        gap: 8rem;
+    }
+    .cont-principal{
+        margin: 0 3rem;
+        height: 80vh;
+        justify-content: center;
+    }
+
+    .presentacion h1{
+        font-size: 5rem;
+    }
+
+    /****** servicios *****/
+
+    .art-card{
+        width: 40%;
+    }
+
+    .cont-principal h2{
+        letter-spacing: 1.2rem;
+    }
+
+}
+
+
+
+@media (max-width: 1024px){
+    .cont-header{
+        margin: 0 2rem;
+    }
+    .nav-bar{
+        gap: 4rem;
+    }
+
+    .nav-bar li a{
+    font-size: 1rem;
+    }
+
+    .cont-principal{
+       height: 75vh;
+    }
+
+    .presentacion h1{
+        font-size: 3.5rem;
+        
+    }
+
+    .presentacion h2 {
+        font-size: 1.5rem;
+        letter-spacing: .7rem;
+    }
+
+ 
 }
 
 
