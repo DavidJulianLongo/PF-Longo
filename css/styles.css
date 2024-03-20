@@ -420,7 +420,7 @@ footer{
     margin-bottom: 6.25rem;
 }
 
-.galeria-titulo h1{
+.galeria-titulo h2{
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
     font-weight: 500;
@@ -536,10 +536,7 @@ footer{
     .cont-principal h1{
         font-size: 6rem;
     }
-
 }
-
-
 
 
 @media (max-width: 1440px) {
@@ -569,6 +566,10 @@ footer{
         letter-spacing: 1.2rem;
     }
 
+    /********** galeria **********/
+    .cont-galeria{
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -597,9 +598,37 @@ footer{
     .presentacion h2 {
         font-size: 1.5rem;
         letter-spacing: .7rem;
+        margin-bottom: 3rem;
     }
 
- 
+    .btn{
+        font-size: .8rem;
+        width: 6rem;
+        padding: 1rem 1rem;
+    }
+
+    /********** servicios **********/
+
+    .cont-articles{
+        margin-top: 6.25rem;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .art-card{
+        width: 80%;
+        gap: 20px;
+    }
+
+    
+    /********** galeria **********/
+
+    .cont-galeria{
+        margin: 5rem 0;
+    }
+    .galeria-titulo h2{
+        font-size: 3rem;
+    }
 }
 
 
