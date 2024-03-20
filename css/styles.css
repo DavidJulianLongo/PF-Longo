@@ -17,36 +17,48 @@ body{
 }
 
 
-/****** header ******/
-
-.cont-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 5rem;
+/*********** navbar ***********/
+.container-fluid{
+    padding: 0 5rem;
+}
+.navbar{
+    width: 100%;
 }
 
-.nav-bar{
-    display: flex;
-    gap: 10rem;
+.navbar-collapse{
+    justify-content: end;
 }
 
-.nav-bar li a{
+.navbar-nav{
+    gap: 4rem;
+}
+
+.nav-item a{
     font-family: "Poppins", sans-serif;
     color: #555555;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 400;
     transition: all .3s ease;
 }
 
-.nav-bar li a:hover{
-   color: #F38FB0;
-   text-shadow:  0 0 .9375rem #F38FB0;
+.nav-item a:hover{
+    color: #F38FB0;
+    text-shadow:  0 0 .9375rem #F38FB0;
+}
+
+.dropdown-menu{
+    border:none;
+    box-shadow: 0 0 .9375rem #F38FB0
+}
+
+.dropdown-menu a{
+    font-size: 1rem;
 }
 
 
 
-/****** footer ******/
+
+/*********** footer ***********/
 
 footer{
     background-color: #24262b;
@@ -159,6 +171,8 @@ footer{
 
 
 /****************** Sobre mi   ***************************/
+
+
 .cont-article-sobre{
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +238,7 @@ footer{
 .cont-articles{
     display: flex;
     justify-content: space-evenly;
-    margin: 12.5rem 0;
+    margin: 10rem 0;
 }
 .art-card{
     width: 35%;
@@ -264,13 +278,13 @@ footer{
 
 .cont-sugerencia{
     background-color: #d9d9d923;
-    padding: 9.375rem 0;
+    padding: 6rem 0;
     text-align: center;
 }
 
 .cont-sugerencia p{
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #555555;
     margin-bottom: 3.125rem;
@@ -291,7 +305,6 @@ footer{
 .cont-contacto{
     display: flex;
     justify-content: center;
-    background-color: #d9d9d923;
     margin-top: 6.25rem;
     padding: 1.25rem 0;
 }
@@ -414,13 +427,12 @@ footer{
 
 
 .cont-galeria{
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 20rem;
 }
 
 .galeria-titulo{
-    background-color: #d9d9d923;
-    margin-bottom: 6.25rem;
+    margin-bottom: 3rem;
 }
 
 .galeria-titulo h2{
@@ -534,9 +546,6 @@ footer{
 
 @media (max-width: 1440px) {
   
-    .nav-bar{
-        gap: 8rem;
-    }
    
     .cont-principal{
         padding: 0 5rem;
@@ -563,10 +572,7 @@ footer{
 
 @media (max-width: 1024px){
     
-    .nav-bar{
-        gap: 4rem;
-    }
-
+    
     .nav-bar li a{
     font-size: 1rem;
     }
