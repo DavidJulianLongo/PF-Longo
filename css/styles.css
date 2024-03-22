@@ -124,6 +124,10 @@ footer{
     margin: 0;
 }
 
+.presentacion h1 span{
+    color: #F38FB0;
+}
+
 .presentacion h2{
     background-color: #555555;
     color: #F38FB0;
@@ -513,13 +517,27 @@ footer{
 
 
 /****************************************************************/
-
-@media (max-width: 1440px) {
-  
-   
+@media (max-width: 1650px) {
     .cont-principal{
         padding: 0 5rem;
         justify-content: center;
+    }
+
+    .cont-principal h1{
+        font-size: 4.5rem;
+    }
+}
+
+
+@media (max-width: 1440px) {
+  
+    .cont-principal{
+        padding: 0 5rem;
+        justify-content: center;
+    }
+
+    .cont-principal h1{
+        font-size: 4rem;
     }
     .cont-principal h2{
         letter-spacing: 1.2rem;
@@ -536,7 +554,30 @@ footer{
     .cont-galeria{
         margin-bottom: 5rem;
     }
+
+
+    /********** sobre *********/
+
+    .cont-sobre{
+        width: 62.5rem;
+    }
 }
+
+
+
+@media (max-width: 1280px){
+
+    /********** index *********/
+    .presentacion h1{
+        font-size: 3rem;
+    }
+
+    /********** sobre *********/
+    .cont-sobre{
+        width: 60rem;
+    }
+}
+
 
 
 
@@ -552,8 +593,7 @@ footer{
 
     /********** index **********/
     .presentacion h1{
-        font-size: 3rem;
-        
+        font-size: 2.5rem;
     }
 
     .presentacion h2 {
@@ -571,13 +611,7 @@ footer{
     /********** servicios **********/
 
     .cont-articles{
-        flex-wrap: wrap;
         gap: 6.25rem;
-    }
-
-    .art-card{
-        width: 70%;
-        height: 28.125rem;
     }
 
     .cont-sugerencia{
@@ -596,6 +630,78 @@ footer{
     .galeria-titulo h2{
         font-size: 3rem;
     }
+
+     /********** sobre *********/
+     .cont-sobre{
+        width: 56.25rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px){
+
+    .container-fluid{
+        padding: .625rem 1.875rem;
+    }
+    .navbar-nav{
+        align-items: end;
+        gap: 1rem;
+    }
+
+
+    /********** index **********/
+    .cont-principal{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+        margin: 2rem 0 6rem 0;
+    }
+
+    .presentacion h1{
+        background-color: #F8F9FA;
+        font-size: 4rem;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .presentacion h2{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .btn{
+        font-size: .8rem;
+        width: 5rem;
+        padding: .6rem;
+    }
+
+    .cont-martha-img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+    /********** contacto *********/
+    .cont-contacto{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .contacto-contenido{
+        width: 100%;
+    }
+
+    .cont-form{
+        margin-bottom: 6rem;
+    }
+
+
+    /********** sobre *********/
+     
+    
 }
 
 
