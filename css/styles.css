@@ -20,7 +20,7 @@ body{
 /*********** navbar ***********/
 
 .container-fluid{
-    padding: 0 5rem;
+    padding: 0 2rem;
 }
 .navbar{
     width: 100%;
@@ -42,7 +42,7 @@ body{
     transition: all .3s ease;
 }
 
-.nav-link:hover{
+.nav-item a:hover{
     color: #F38FB0;
     text-shadow:  0 0 .9375rem #F38FB0;
 }
@@ -52,14 +52,9 @@ body{
     box-shadow: 0 0 .9375rem #F38FB0
 }
 
-.dropdown-item{
-    transition: all .3s ease;
+.dropdown-menu a{
+    font-size: 1rem;
 }
-.dropdown-item:hover{
-    color: #F38FB0;
-    text-shadow:  0 0 .9375rem #F38FB0;
-}
-
 
 
 
@@ -110,6 +105,7 @@ footer{
 .cont-principal{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     height: 90vh;
 }
 
@@ -118,14 +114,18 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
 }
 
 .presentacion h1{
+    background-color: #d9d9d923;
     font-family: "Poppins", sans-serif;
     font-size: 5rem;
     font-weight: 600;
     color: #555555;
+    line-height: normal;
     text-align: center;
+    margin: 0;
 }
 
 .presentacion h2{
@@ -135,7 +135,7 @@ footer{
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 3rem;
-    padding: .5rem;
+    padding-left: 1rem;
     text-align: center;
     letter-spacing: 1.2rem;
 }
@@ -180,18 +180,18 @@ footer{
 
 .cont-article-sobre{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 12.5rem 0;
 }
 
 .art-card-sobre{
-    width: 80%;
+    width: 60%;
     display: flex;
     padding: 1.25rem;
     box-shadow: 0 0 .9375rem rgba(0, 0, 0, .1);
     transition: all .5s ease;
 }
-
 
 .art-card-contenido-sobre{
     display: flex;
@@ -203,7 +203,7 @@ footer{
 
 
 .art-card-sobre:hover{
-    background-color: #F8F9FA;
+    background-color: #d9d9d923;
     box-shadow: 0 0 .9375rem #F38FB0;
 }
 
@@ -242,11 +242,12 @@ footer{
 
 .cont-articles{
     display: flex;
-    justify-content: space-evenly;
-    margin: 10rem 0;
+    justify-content: center;
+    gap: 50px;
+    margin: 10rem 5rem;
 }
 .art-card{
-    width: 35%;
+    width: 62.5rem;
     display: flex;
     padding: 1.25rem;
     box-shadow: 0 0 .9375rem rgba(0, 0, 0, .1);
@@ -255,7 +256,7 @@ footer{
 
 .art-card:hover{
     transform: scale(1.008);
-    background-color: #F8F9FA;
+    background-color: #d9d9d923;
     box-shadow: 0 0 .9375rem #F38FB0;
 }
 
@@ -311,13 +312,12 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 6.25rem;
-    padding: 1.25rem;
+    padding: 1.25rem 0;
 }
 
 .contacto-contenido{
     width: 43.75rem;
 }
-
 
 .cont-contacto h1{
     font-family: "Poppins", sans-serif;
@@ -340,7 +340,7 @@ footer{
 .cont-form{
     display: flex;
     justify-content: center;
-    margin: 6rem 0;
+    padding: 4.375rem 0;
 }
 
 .form-contacto{
@@ -352,7 +352,7 @@ footer{
 }
 
 .form-contacto:hover{
-    background-color: #F8F9FA;
+    background-color: #d9d9d923;
     box-shadow: 0 0 .9375rem #F38FB0;
 }
 
@@ -552,8 +552,7 @@ footer{
 
 @media (max-width: 1440px) {
   
-    /******** index ********/
-
+   
     .cont-principal{
         padding: 0 5rem;
         justify-content: center;
@@ -564,8 +563,10 @@ footer{
 
     /****** servicios *****/
 
-    .art-card{
-        width: 40%;
+    .cont-articles{
+        
+        flex-wrap: wrap;
+       
     }
 
     /********** galeria **********/
@@ -573,32 +574,19 @@ footer{
     .cont-galeria{
         margin-bottom: 5rem;
     }
-
-    /********** sobre *************/
-
-    .art-card-sobre{
-        width: 80%;
-    }
-
-    .art-card-contenido-sobre{
-        padding: 0;
-    }
 }
 
 
 
 @media (max-width: 1024px){
-    
+
     .navbar-nav{
-        gap: 2rem;   
+        gap: 2rem;
     }
-
+    
     .nav-link{
-        font-size: 1rem;
+    font-size: 1rem;
     }
-
-
-    /********** index **********/
 
     .cont-principal{
         height: 75vh;
@@ -625,7 +613,6 @@ footer{
 
     .cont-articles{
         margin: 6.25rem 0;
-
         flex-wrap: wrap;
         gap: 6.25rem;
     }
@@ -651,87 +638,7 @@ footer{
     .galeria-titulo h2{
         font-size: 3rem;
     }
-
-
-    /*********** sobre ***********/
-
-    .art-card-contenido-sobre h1{
-        margin-bottom: 1rem;
-    }
-
-    .art-card-contenido-sobre h2{
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-    }
-
-    .art-card-contenido-sobre p{
-        font-size: .875rem;
-        
-    }
 }
-
-
-
-@media (max-width: 768px){
-
-    .container-fluid{
-        padding: .625rem 1.875rem;
-    }
-    .navbar-nav{
-        align-items: end;
-        gap: 1rem;
-    }
-
-
-    /********** index **********/
-
-    .cont-principal{
-        flex-direction: column-reverse;
-        justify-content: center;
-        height: max-content;
-        padding: 0;
-        margin: 2rem 0 6rem 0;
-    }
-
-    .presentacion h1{
-        background-color: #F8F9FA;
-        font-size: 4rem;
-        padding: 1rem;
-        margin-bottom: 0;
-    }
-
-    .presentacion h2{
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-    .btn{
-        width: 30%;
-        align-self: center;
-    }
-
-
-    /********** contacto *********/
-
-    .cont-contacto{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-
-    .contacto-contenido{
-        width: 100%;
-    }
-
-    .cont-form{
-        margin-bottom: 6rem;
-    }
-
-
-    /********** sobre *********/
-
-
-}
-
 
 
 
