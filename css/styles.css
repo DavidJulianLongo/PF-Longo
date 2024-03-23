@@ -277,14 +277,15 @@ footer{
 /*****************  contacto  *************************/
 
 .cont-contacto{
-    display: flex;
-    justify-content: center;
-    margin-top: 6.25rem;
+    
+    margin: 6.25rem;
     padding: 1.25rem 0;
 }
 
 .contacto-contenido{
+    margin: 0 auto;
     width: 43.75rem;
+
 }
 
 .cont-contacto h1{
@@ -299,7 +300,6 @@ footer{
 
 .cont-contacto p{
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
     font-weight: 400;
     color: #555555;
     text-align: center;
@@ -308,7 +308,7 @@ footer{
 .cont-form{
     display: flex;
     justify-content: center;
-    padding: 4.375rem 0;
+    margin-bottom: 6.25rem;
 }
 
 .form-contacto{
@@ -409,7 +409,7 @@ footer{
     margin-bottom: 3rem;
 }
 
-.galeria-titulo h2{
+.galeria-titulo h1{
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
     font-weight: 500;
@@ -419,10 +419,10 @@ footer{
 }
 
 .galeria{
-    margin: 0 5rem;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     row-gap: 3rem;
     column-gap: 1rem;
 }
@@ -474,10 +474,10 @@ footer{
 
 
 .galeria-familiar{
-    margin: 0 5rem;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     gap: 1rem;
 }
 
@@ -632,7 +632,7 @@ footer{
     .cont-galeria{
         margin: 5rem 0;
     }
-    .galeria-titulo h2{
+    .galeria-titulo h1{
         font-size: 3rem;
     }
 
@@ -655,8 +655,16 @@ footer{
     .navbar-nav{
         align-items: end;
         gap: 0;
+        padding-right: 1rem;
     }
-
+   
+    .navbar-toggler{
+        border: none !important;
+    }
+ 
+    .navbar-toggler:focus{
+         box-shadow: 0 0 .9375rem #F38FB0 !important;
+     }
 
     .dropdown-menu{
         text-align: center;
@@ -728,7 +736,6 @@ footer{
 
 
     /********** sobre *********/
-
     .art-sobre{
         flex-direction: column;
         width: 80%;
@@ -752,23 +759,31 @@ footer{
 
     /********* servicios *********/
 
+    .cont-articles{
+        margin: 10rem auto;
+        width: 80%;
+    }
+   
     .art-card{
-        width: 28.125rem;
         flex-direction: column;
+        
     }
 
+    .art-card img{
+        width: 100%;
+    }
 
     .art-card-contenido{
         margin: 1rem 0 0 0 ;
     }
 
    .art-card-contenido p{
-    font-size: .875rem;
+        font-size: .875rem;
    }
 
    /********* galeria ***********/
 
-   .galeria-titulo h2 {
+   .galeria-titulo h1{
        font-size: 2.5rem;
     }
 
@@ -778,7 +793,6 @@ footer{
    .cont-contacto{
         width: auto;
         margin: 5rem 0;
-        padding: 1rem 5rem;
     }
 
     .contacto-contenido{
@@ -800,7 +814,7 @@ footer{
 @media (max-width: 600px){
 
     .container-fluid{
-        padding: .625rem 2rem;
+        padding: .625rem 1rem;
     }
 
     .navbar-brand{
@@ -813,18 +827,90 @@ footer{
         font-size: 3rem;
     }
 
+
+     /*********** servicios **********/
+
+     .cont-sugerencia{
+        padding: 3rem;
+    }
+
+
     /********** galería ************/
 
     .galeria{
-        margin: 0 1rem;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        
-        row-gap: 1rem;
-        column-gap: 1rem;
+    }
+
+    .galeria img:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(14){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .galeria img:nth-child(10){
+        grid-column: 1/2;
+       grid-row: 5/6;
+    }
+    
+    .galeria img:nth-child(11){
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .galeria img:nth-child(12){
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .galeria img:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+
+
+
+    .galeria-familiar{
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-familiar img:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .galeria-familiar img:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .galeria-familiar img:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .galeria-familiar img:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
 
     /********** contacnto **********/
+
+    .contacto-contenido h1{
+        font-size: 2.5rem;
+    }
+
+    .contacto-contenido p{
+        font-size: .875rem;
+    }
 
     .form-contacto{
         width: 80%;
@@ -833,9 +919,94 @@ footer{
 
 
 
+@media (max-width: 425px){
+    
+    .navbar-brand{
+        width: 9.375rem;
+    }
+
+   .nav-link{
+        font-size: .875rem;
+   }
+
+    .navbar-toggler{
+        width: 3rem !important;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.5rem !important;
+    }
+
+    
+    /*********** servicios **********/
+
+    .cont-sugerencia{
+        padding: 4rem;
+    }
+    .cont-sugerencia p{
+        font-size: 1rem;
+    }
+
+
+    /*********** galeria ************/
+
+    .galeria-titulo h1{
+        font-size: 2rem;
+    }
+
+    /************ contacto **********/
+
+    .contacto-contenido h1{
+        font-size: 2rem;
+    }
+}
 
 
 
+@media (max-width: 320px){
+
+    /********** servicios ***********/
+    .cont-articles{
+        margin: 5rem auto;
+    }
+
+    .art-card-contenido h2{
+        font-size: 1rem;
+    }
+
+    .art-card-contenido p{
+        font-size: .75rem;
+    }
+
+
+     /************ galeria **********/
+
+     .cont-galeria{
+        margin-top: 3rem;
+     }
+    
+     .galeria-titulo{
+        margin-bottom: 2rem;
+     }
+     .galeria-titulo h1{
+        font-size: 1.5rem;
+    }
+
+    /************* contacto **************/
+
+    .contacto-contenido h1{
+        font-size: 1.5rem;
+    }
+
+    .contacto-contenido p{
+        font-size: .75rem;
+    }
+
+    .form-contacto{
+        padding: 1.5rem;
+    }
+
+}
 
 
 
