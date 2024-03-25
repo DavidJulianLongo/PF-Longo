@@ -132,10 +132,9 @@ footer{
 
 .presentacion h2{
     background-color: #F8F9FA;
-    ;
     color: #F38FB0;
     font-family: "Poppins", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 3rem;
     padding: .3125rem 1rem;
@@ -518,30 +517,9 @@ footer{
 
 
 /****************************************************************/
-@media (max-width: 1650px) {
-    .cont-principal{
-        justify-content: space-evenly;
-    }
-
-    .cont-principal h1{
-        font-size: 4rem;
-    }
-}
-
-
 
 @media (max-width: 1440px) {
   
-    .cont-principal h1{
-        font-size: 4rem;
-    }
-    
-
-    /****** servicios *****/
-
-    .cont-articles{
-        flex-wrap: wrap;
-    }
 
     /********** galeria **********/
     
@@ -571,6 +549,10 @@ footer{
 
     /********** index **********/
 
+    .cont-principal{
+        justify-content: center;
+    }
+
     .presentacion h1{
         font-size: 3rem;
     }
@@ -579,6 +561,10 @@ footer{
         font-size: 2rem;
     }
 
+    /********* servicios ****************/
+    .cont-articles{
+        flex-wrap: wrap;
+    }
 
     /********** sobre *********/
     .cont-sobre{
@@ -591,25 +577,15 @@ footer{
 
 @media (max-width: 1024px){
 
-    
-
     /********** index **********/
 
-    .cont-principal{
-        justify-content: center;
-    }
-
-
     .presentacion h1{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
 
     .presentacion h2 {
-        font-size: 1.8rem;
-        margin-bottom: 3rem;
+        font-size: 1.75rem;
     }
-
-    
 
     /********** servicios **********/
 
@@ -704,7 +680,7 @@ footer{
     }
 
     .cont-martha-img{
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
     }
     
@@ -945,6 +921,10 @@ footer{
     
     /*********** servicios **********/
 
+    .cont-articles{
+        margin: 5rem auto;
+    }
+
     .cont-sugerencia{
         padding: 4rem;
     }
@@ -963,6 +943,13 @@ footer{
 
     .contacto-contenido h1{
         font-size: 2rem;
+    }
+
+    .form-contacto{
+        padding: 3rem 2rem;
+    }
+    .input-box label{
+        font-size: .875rem;
     }
 
     /************ sobre *************/
@@ -991,15 +978,13 @@ footer{
     }
 
     .btn-a{
+        font-size: .75rem;
         width: 6rem;
         padding: .5rem;
     }
 
 
     /********** servicios ***********/
-    .cont-articles{
-        margin: 5rem auto;
-    }
 
     .art-card-contenido h2{
         font-size: 1rem;
@@ -1038,10 +1023,14 @@ footer{
     }
 
     .form-contacto{
-        padding: 1.5rem;
+        padding: 2rem 1.25rem;
     }
 
     .input-box label{
+        font-size: .75rem;
+    }
+
+    .input-box .btn-submit{
         font-size: .75rem;
     }
 
@@ -1055,8 +1044,6 @@ footer{
         font-size: .75rem;
     }
 }
-
-
 
 
 
