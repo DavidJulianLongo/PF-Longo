@@ -7,6 +7,8 @@
 
 
 /******               layout              ******/
+/*header*/
+@import "../scss/layout/header";
 /*footer*/
 @import "./layout/footer";
 /*main-index*/
@@ -44,8 +46,6 @@
 
 
 /******               componets              ******/
-/*header*/
-@import "./components/bootstrap-header";
 /*cards-servicios*/
 @import "./components/cards-servicios";
 

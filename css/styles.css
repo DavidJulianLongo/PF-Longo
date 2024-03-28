@@ -15,6 +15,37 @@ body {
   background-color: #fdfdfd; }
 
 /******               layout              ******/
+/*header*/
+.container-fluid {
+  padding: 0 2rem; }
+
+.navbar {
+  width: 100%; }
+
+.navbar-collapse {
+  justify-content: end; }
+
+.navbar-nav {
+  gap: 6rem; }
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #555555;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transition: all .3s ease; }
+
+.nav-item a:hover {
+  color: #F38FB0;
+  text-shadow: 0 0 .9375rem #F38FB0; }
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0 .9375rem #F38FB0; }
+
+.dropdown-menu a {
+  font-size: 1rem; }
+
 /*footer*/
 footer {
   background-color: #24262b;
@@ -637,37 +668,6 @@ footer {
     padding: .5rem; } }
 
 /******               componets              ******/
-/*header*/
-.container-fluid {
-  padding: 0 2rem; }
-
-.navbar {
-  width: 100%; }
-
-.navbar-collapse {
-  justify-content: end; }
-
-.navbar-nav {
-  gap: 6rem; }
-
-.nav-link {
-  font-family: "Poppins", sans-serif;
-  color: #555555;
-  font-size: 1.25rem;
-  font-weight: 400;
-  transition: all .3s ease; }
-
-.nav-item a:hover {
-  color: #F38FB0;
-  text-shadow: 0 0 .9375rem #F38FB0; }
-
-.dropdown-menu {
-  border: none;
-  box-shadow: 0 0 .9375rem #F38FB0; }
-
-.dropdown-menu a {
-  font-size: 1rem; }
-
 /*cards-servicios*/
 .art-card {
   width: 62.5rem;
