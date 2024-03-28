@@ -1,0 +1,52 @@
+@media (max-width: 768px){
+
+    /********* servicios *********/
+
+    .cont-articles{
+        margin: 10rem auto;
+        width: 80%;
+    }
+   
+    .art-card{
+        flex-direction: column;
+        
+    }
+
+    .art-card img{
+        width: 100%;
+    }
+
+    .art-card-contenido{
+        margin: 1rem 0 0 0 ;
+    }
+
+   .art-card-contenido p{
+        font-size: .875rem;
+   }
+
+   /********* galeria ***********/
+
+   .galeria-titulo h1{
+       font-size: 2.5rem;
+    }
+
+
+   /********** contacto **********/
+
+   .cont-contacto{
+        width: auto;
+        margin: 5rem 0;
+    }
+
+    .contacto-contenido{
+        width: 80%;
+    }
+
+
+    /********* sobre *************/
+    .art-contenido-sobre p{
+        font-size: .875rem;
+        margin: 2rem 0;
+    }
+
+}

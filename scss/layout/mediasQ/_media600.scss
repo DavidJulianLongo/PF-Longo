@@ -1,0 +1,106 @@
+
+@media (max-width: 600px){
+
+    .container-fluid{
+        padding: .625rem 1rem;
+    }
+
+    .navbar-brand{
+        max-width: 12.5rem;
+    }
+
+    /********** index **************/
+
+    .presentacion h1{
+        font-size: 3rem;
+    }
+
+
+     /*********** servicios **********/
+
+     .cont-sugerencia{
+        padding: 3rem;
+    }
+
+
+    /********** galería ************/
+
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .galeria img:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .galeria img:nth-child(8){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .galeria img:nth-child(14){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .galeria img:nth-child(10){
+        grid-column: 1/2;
+       grid-row: 5/6;
+    }
+    
+    .galeria img:nth-child(11){
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .galeria img:nth-child(12){
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .galeria img:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+
+
+
+    .galeria-familiar{
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-familiar img:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .galeria-familiar img:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .galeria-familiar img:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .galeria-familiar img:nth-child(13){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /********** contacnto **********/
+
+    .contacto-contenido h1{
+        font-size: 2.5rem;
+    }
+
+    .contacto-contenido p{
+        font-size: .875rem;
+    }
+
+    .form-contacto{
+        width: 80%;
+    }
+}  

@@ -1,0 +1,60 @@
+
+@media (max-width: 425px){
+    
+    .navbar-brand{
+        width: 9.375rem;
+    }
+
+   .nav-link{
+        font-size: .875rem;
+   }
+
+    .navbar-toggler{
+        width: 3rem !important;
+    }
+
+    .navbar-toggler-icon{
+        width: 1.5rem !important;
+    }
+
+    
+    /*********** servicios **********/
+
+    .cont-articles{
+        margin: 5rem auto;
+    }
+
+    .cont-sugerencia{
+        padding: 4rem;
+    }
+    .cont-sugerencia p{
+        font-size: 1rem;
+    }
+
+
+    /*********** galeria ************/
+
+    .galeria-titulo h1{
+        font-size: 2rem;
+    }
+
+    /************ contacto **********/
+
+    .contacto-contenido h1{
+        font-size: 2rem;
+    }
+
+    .form-contacto{
+        padding: 3rem 2rem;
+    }
+    .input-box label{
+        font-size: .875rem;
+    }
+
+    /************ sobre *************/
+
+    .cont-sobre{
+        margin-top: 5rem;
+    }
+
+}

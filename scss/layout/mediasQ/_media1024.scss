@@ -1,0 +1,40 @@
+@media (max-width: 1024px){
+
+    /********** index **********/
+
+    .presentacion h1{
+        font-size: 2.7rem;
+    }
+
+    .presentacion h2 {
+        font-size: 1.75rem;
+    }
+
+    /********** servicios **********/
+
+    .cont-articles{
+        gap: 6.25rem;
+    }
+
+    .cont-sugerencia{
+        padding: 6.25rem;
+    }
+
+    .cont-sugerencia p{
+        font-size: 1.2rem;
+    }
+    
+    /********** galeria **********/
+
+    .cont-galeria{
+        margin: 5rem 0;
+    }
+    .galeria-titulo h1{
+        font-size: 3rem;
+    }
+
+     /********** sobre *********/
+     .cont-sobre{
+        max-width: 56.25rem;
+    }
+}

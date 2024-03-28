@@ -1,0 +1,26 @@
+@media (max-width: 269px){
+
+    .container-fluid{
+        padding: .625rem .8rem;
+    }
+    .navbar-brand{
+        width: 6.25rem;
+        margin-right: 0;
+    }
+
+    /************ index  ************/
+    
+    .presentacion h1{
+        font-size: 2rem;
+    }
+
+    .presentacion h2{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    .btn-a{
+        width: 5rem;
+        padding: .5rem;
+    }
+}

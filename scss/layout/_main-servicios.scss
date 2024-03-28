@@ -1,0 +1,23 @@
+.cont-articles{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 10rem 5rem;
+}
+
+.cont-sugerencia{
+    background-color: #d9d9d923;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.cont-sugerencia p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 3.125rem;
+}
+
+
+/* El botón usa el estilo del botón del index */

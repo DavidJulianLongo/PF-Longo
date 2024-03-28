@@ -1,0 +1,29 @@
+.cont-sobre{
+    margin: 10rem auto;
+    max-width: 75rem;
+}
+
+.art-sobre{
+    display: flex;
+    align-items: center;
+}
+
+.art-contenido-sobre{
+    padding-left: 2rem;
+}
+
+
+.art-contenido-sobre h1, h2{
+    font-family: "Poppins", sans-serif;
+    color: #555555;
+    margin: 0;
+}
+
+
+.art-contenido-sobre p{
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+    margin: 3rem 0;
+}
+
+/* El botón usa el estilo del botón del index */

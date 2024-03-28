@@ -1,0 +1,114 @@
+@media (max-width: 991px){
+
+    .container-fluid{
+        padding: .625rem 1.875rem;
+    }
+
+    .navbar-nav{
+        align-items: end;
+        gap: 0;
+        padding-right: 1rem;
+    }
+   
+    .navbar-toggler{
+        border: none !important;
+    }
+ 
+    .navbar-toggler:focus{
+         box-shadow: 0 0 .9375rem #F38FB0 !important;
+     }
+
+    .dropdown-menu{
+        text-align: center;
+        min-width: 100px;
+    }
+
+
+    /********** index **********/
+
+    .cont-principal{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0;
+        margin: 2rem 0 6rem 0;
+    }
+
+    .presentacion{
+        width: 100%;
+    }
+
+    .presentacion h1{
+        background-color: #F8F9FA;
+        font-size: 4rem;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
+    .presentacion h2{
+        background-color: #555555;
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .btn-a{
+        font-size: .8rem;
+        width: 10rem;
+        padding: .6rem;
+        margin: 0 auto;
+    }
+
+    .cont-martha-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+    /********** galería **********/
+    .galeria{
+        column-gap: .5rem;
+        row-gap: 1.5rem;
+    }
+
+
+    /********** contacto *********/
+    .cont-contacto{
+        width: 37.5rem;
+        margin: 5rem auto;
+    }
+
+    .contacto-contenido{
+        width: 100%;
+    }
+
+    .contacto-contenido h1{
+        font-size: 3rem;
+    }
+
+    .cont-form{
+        margin-bottom: 6rem;
+        padding: 0;
+    }
+    
+    .input-box label{
+        font-size: 1rem;
+    }
+
+
+    /********** sobre *********/
+    .art-sobre{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .art-contenido-sobre{
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+    .art-img-sobre{
+        width: 100%;
+    }
+    
+}

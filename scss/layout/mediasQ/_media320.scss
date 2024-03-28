@@ -1,0 +1,80 @@
+@media (max-width: 320px){
+
+    /********** index ****************/
+
+    .presentacion h1{
+        font-size: 2.5rem;
+    }
+
+    .presentacion h2{
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    .btn-a{
+        font-size: .75rem;
+        width: 6rem;
+        padding: .5rem;
+    }
+
+
+    /********** servicios ***********/
+
+    .art-card-contenido h2{
+        font-size: 1rem;
+    }
+
+    .art-card-contenido p{
+        font-size: .75rem;
+    }
+
+    .cont-sugerencia{
+        padding: 2rem;
+    }
+
+
+     /************ galeria **********/
+
+     .cont-galeria{
+        margin-top: 3rem;
+     }
+    
+     .galeria-titulo{
+        margin-bottom: 2rem;
+     }
+     .galeria-titulo h1{
+        font-size: 1.5rem;
+    }
+
+    /************* contacto **************/
+
+    .contacto-contenido h1{
+        font-size: 1.5rem;
+    }
+
+    .contacto-contenido p{
+        font-size: .75rem;
+    }
+
+    .form-contacto{
+        padding: 2rem 1.25rem;
+    }
+
+    .input-box label{
+        font-size: .75rem;
+    }
+
+    .input-box .btn-submit{
+        font-size: .75rem;
+    }
+
+    /*********** sobre *******************/
+
+    .art-contenido-sobre h2{
+        font-size: 1.25rem;
+    }
+
+    .art-contenido-sobre p{
+        font-size: .75rem;
+    }
+}

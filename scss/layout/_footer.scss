@@ -1,0 +1,33 @@
+footer{
+    background-color: #24262b;
+    padding: 5rem 0;
+}
+
+.footer-titulo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 3.125rem;
+    text-align: center;
+}
+
+.social-link{
+    text-align: center;
+}
+
+.social-link a{
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #555555;
+    margin: .625rem .625rem ;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .3s ease;
+}
+
+.social-link a:hover{
+    background-color: #F38FB0;
+}
