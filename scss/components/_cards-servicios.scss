@@ -1,34 +1,38 @@
 .art-card{
-    width: 62.5rem;
-    display: flex;
+    max-width: 46.875rem;
+    @include flex(row, none, none, none);
     padding: 1.25rem;
     box-shadow: 0 0 .9375rem rgba(0, 0, 0, .1);
     transition: all .5s ease;
-}
+    &:hover{
+        background-color: map-get($colors, gris);
+        box-shadow: 0 0 .9375rem #F38FB0;
+    }
+    a .art-card-img{
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.01);
+        }
+    }
+    .art-card-contenido{
+        @include flex(column, center, none, none);
+        margin-left: 1.25rem;
+        h2{
+            margin-bottom: 16px;
+            font-family: $font-titulo;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: map-get($colors, grisOscuro);
+        }
+        p{
+            font-family: $font;
+            font-weight: 300;
+            color: map-get($colors, grisOscuro);
+        }
+    }
+}   
 
-.art-card:hover{
-    transform: scale(1.008);
-    background-color: #d9d9d923;
-    box-shadow: 0 0 .9375rem #F38FB0;
-}
 
-.art-card-contenido{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1.25rem;
-}
 
-.art-card-contenido h2{
-    margin-bottom: 16px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #555555;
-}
 
-.art-card-contenido p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #555555;
-}
+

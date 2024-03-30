@@ -1,6 +1,7 @@
 
 @media (max-width: 425px){
-    
+
+    /******* header-boostrap *********/
     .container-fluid{
         a .navbar-brand{
             width: 9.375rem;
@@ -23,10 +24,6 @@
     }  
    
 
-   
-
-
-    
     /*********** index **************/
     .cont-principal{
         .presentacion{
@@ -43,13 +40,13 @@
     }
 
     .cont-sugerencia{
-        padding: 4rem;
+        padding: 1.5rem;
+        p{
+            font-size: 1rem;
+        }
+    
     }
-    .cont-sugerencia p{
-        font-size: 1rem;
-    }
-
-
+    
     /*********** galeria ************/
 
     .galeria-titulo h1{

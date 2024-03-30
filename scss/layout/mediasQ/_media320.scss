@@ -21,17 +21,23 @@
 
 
     /********** servicios ***********/
-
-    .art-card-contenido h2{
-        font-size: 1rem;
+    .cont-articles{
+        .art-card-contenido{
+            h2{
+                font-size: 1.25rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+        }
     }
-
-    .art-card-contenido p{
-        font-size: .75rem;
-    }
-
+    
     .cont-sugerencia{
-        padding: 2rem;
+        .btn-a{
+            font-size: .75rem;
+            width: 6rem;
+            padding: .5rem;
+        }
     }
 
 

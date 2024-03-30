@@ -1,17 +1,11 @@
 .contacto{
     display: flex;
     justify-content: center;
-    margin: 8rem auto;
-    gap: 5rem;
+    margin: 5.625rem auto;
+    gap: 3rem;
 }
 .cont-contacto{
-    width: 30%;
-}
-
-.contacto-contenido{
-    margin: 0 auto;
-    width: 100%;
-
+    max-width: 31.25rem;
 }
 
 .cont-contacto h1{
@@ -21,14 +15,27 @@
     color: #F38FB0;
     line-height: 3.125rem;
     margin-bottom: 3rem;
-    text-align: center;
 }
 
-.cont-contacto p{
+.contacto-contenido p{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #555555;
-    text-align: center;
+}
+
+.contacto-icon{
+    display:flex;
+    flex-direction: column;
+    margin-top: 3.125rem;
+}
+
+.contacto-icon p{
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: .75rem;
+    color: #555555;
+    margin-left: 1rem;
+
 }
 
 .cont-form{
@@ -37,12 +44,11 @@
 }
 
 .form-contacto{
-    padding: 3.125rem;
+    padding: 2.5rem;
     width: 31.25rem;
     border-radius: .5rem;
     background-color: #d9d9d923;
     box-shadow: 0 0 .9375rem #F38FB0;
-    
 }
 
 .input-box{
@@ -52,10 +58,10 @@
     font-size: 1.2rem;
     font-weight: 400;
     color: #555555;
-    
 }
 
 .input-box label{
+    font-size: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -65,7 +71,7 @@
     font-weight: 400;
     color: #555555;
     height: 1.875rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: .5rem  .8rem;
     outline: none;
     border: none;
