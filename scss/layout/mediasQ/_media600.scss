@@ -3,19 +3,22 @@
 
     .container-fluid{
         padding: .625rem 1rem;
+        a .navbar-brand{
+            max-width: 12.5rem;
+        }
     }
 
-    .navbar-brand{
-        max-width: 12.5rem;
+   
+
+    /************ index ***************/
+    .cont-principal{
+        .presentacion{
+            h1{
+                font-size: 3.5rem;
+            }
+        } 
     }
-
-    /********** index **************/
-
-    .presentacion h1{
-        font-size: 3rem;
-    }
-
-
+    
      /*********** servicios **********/
 
      .cont-sugerencia{

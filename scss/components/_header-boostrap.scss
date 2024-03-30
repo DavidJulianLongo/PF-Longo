@@ -1,0 +1,39 @@
+.container-fluid{
+    padding: 0 2rem;
+    a .navbar-brand{
+        margin: 0;
+    }
+    .navbar-collapse{
+        justify-content: end;
+        .navbar-nav{
+            gap: 6rem;
+        }
+    }
+    .nav-item{
+        .nav-link{
+            font-family: $font-titulo;
+            color: map-get($colors, grisOscuro);
+            font-size: 1.25rem;
+            font-weight: 400;
+            transition: all .3s ease;
+            &:hover{
+                color: #F38FB0;
+                text-shadow:  0 0 .9375rem #F38FB0;
+            }
+        }
+        .dropdown-menu{
+            border:none;
+            box-shadow: 0 0 .9375rem #F38FB0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

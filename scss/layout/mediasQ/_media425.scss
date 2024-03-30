@@ -1,27 +1,45 @@
 
 @media (max-width: 425px){
     
-    .navbar-brand{
-        width: 9.375rem;
-    }
+    .container-fluid{
+        a .navbar-brand{
+            width: 9.375rem;
+        }
+        .navbar-toggler{
+            width: 3rem !important;
+            .navbar-toggler-icon{
+                width: 1.5rem !important;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }    
+    }  
+   
 
-   .nav-link{
-        font-size: .875rem;
-   }
+   
 
-    .navbar-toggler{
-        width: 3rem !important;
-    }
 
-    .navbar-toggler-icon{
-        width: 1.5rem !important;
-    }
-
+    
+    /*********** index **************/
+    .cont-principal{
+        .presentacion{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    } 
     
     /*********** servicios **********/
 
     .cont-articles{
-        margin: 5rem auto;
+        margin: 3rem auto;
     }
 
     .cont-sugerencia{

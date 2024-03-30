@@ -13,5 +13,5 @@ a{
 }
 
 body{
-    background-color: #fdfdfd;
+    background-color: map-get($colors, blanco);
 }

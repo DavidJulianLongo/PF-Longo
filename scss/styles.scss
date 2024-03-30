@@ -1,4 +1,7 @@
-
+/******               utilities               ******/
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/variables";
 
 
 /******               base                  ******/
@@ -6,48 +9,66 @@
 
 
 
+/******               componets              ******/
+/*header-boostrap*/
+@import "../scss/components/header-boostrap";
+
+/*cards-servicios*/
+@import "./components/cards-servicios";
+
+
 /******               layout              ******/
-/*header*/
-@import "../scss/layout/header";
+
 /*footer*/
 @import "./layout/footer";
+
 /*main-index*/
 @import "./layout/main-index";
+
 /*main-sobre*/
 @import "./layout/main-sobre";
+
 /*main-servicios*/
 @import "./layout/main-servicios";
+
 /*main-contacto*/
 @import "./layout/main-contacto";
+
 /**********        galeria      ************/
 /*main-galeria-bodas*/
 @import "./layout/main-galeria-bodas";
 /*main-galeria-familiar*/
 @import "./layout/main-galeria-familiar";
 
-/**********mediasQ************/
+
+/*****mediasQ*******/
 /*media1280*/
 @import "../scss/layout/mediasQ/media1280";
+
 /*media1024*/
 @import "../scss/layout/mediasQ/media1024";
+
 /*media991*/
 @import "../scss/layout/mediasQ/media991";
+
 /*media768*/
 @import "../scss/layout/mediasQ/media768";
+
 /*media600*/
 @import "../scss/layout/mediasQ/media600";
+
 /*media425*/
 @import "../scss/layout/mediasQ/media425";
+
 /*media320*/
 @import "../scss/layout/mediasQ/media320";
+
 /*media269*/
 @import "../scss/layout/mediasQ/media269";
 
 
 
-/******               componets              ******/
-/*cards-servicios*/
-@import "./components/cards-servicios";
+
 
 
 

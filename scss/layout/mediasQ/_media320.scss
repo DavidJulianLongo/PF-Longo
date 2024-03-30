@@ -2,19 +2,21 @@
 
     /********** index ****************/
 
-    .presentacion h1{
-        font-size: 2.5rem;
-    }
-
-    .presentacion h2{
-        font-size: 1.5rem;
-        padding: .5rem;
-    }
-
-    .btn-a{
-        font-size: .75rem;
-        width: 6rem;
-        padding: .5rem;
+    .cont-principal{
+        .presentacion{
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2{
+                font-size: 1.5rem;
+                padding: .5rem;
+            }
+            .btn-a{
+                font-size: .75rem;
+                width: 6rem;
+                padding: .5rem;
+            }
+        }
     }
 
 

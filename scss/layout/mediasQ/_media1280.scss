@@ -1,33 +1,44 @@
 @media (max-width: 1280px){
 
-    .navbar-nav{
-        gap: 2rem;
+    /********* header-bootstrap ********/
+
+    .container-fluid{
+        .navbar-collapse{
+            .navbar-nav{
+                gap: 4rem;
+                .nav-link{
+                    font-size: 1rem;
+                }
+            } 
+        } 
     }
     
-    .nav-link{
-    font-size: 1rem;
-    }
+  
 
     /********** index **********/
 
     .cont-principal{
-        justify-content: center;
-    }
+        @include flex(row, center, none, none);
+        .presentacion {
+            h1{
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+        } 
+    }    
 
-    .presentacion h1{
-        font-size: 3rem;
-    }
-
-    .presentacion h2{
-        font-size: 2rem;
-    }
+  
 
     /********* servicios ****************/
+
     .cont-articles{
         flex-wrap: wrap;
     }
 
     /********** sobre *********/
+    
     .cont-sobre{
         max-width: 60rem;
     }

@@ -2,25 +2,29 @@
 
     .container-fluid{
         padding: .625rem .8rem;
+        a .navbar-brand{
+            width: 6.25rem;
+            margin-right: 0;
+        }
     }
-    .navbar-brand{
-        width: 6.25rem;
-        margin-right: 0;
-    }
+   
 
     /************ index  ************/
     
-    .presentacion h1{
-        font-size: 2rem;
-    }
-
-    .presentacion h2{
-        font-size: 1rem;
-        padding: .5rem;
-    }
-
-    .btn-a{
-        width: 5rem;
-        padding: .5rem;
+    .cont-principal{
+        .presentacion{
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1rem;
+                padding: .5rem;
+            }
+            .btn-a{
+                font-size: .625rem;
+                width: 5rem;
+                padding: .5rem;
+            }
+        }
     }
 }
