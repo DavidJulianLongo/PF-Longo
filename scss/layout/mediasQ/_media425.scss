@@ -54,22 +54,31 @@
     }
 
     /************ contacto **********/
-
-    .contacto-contenido h1{
-        font-size: 2rem;
+    
+    .contacto{
+        margin: 3rem auto;
+    }
+    .cont-contacto{
+        .contacto-contenido{
+            h1{
+                font-size: 2rem;
+                margin-bottom: 1.25rem;
+            }
+        }
     }
 
-    .form-contacto{
-        padding: 3rem 2rem;
+    .cont-form{
+        .form-contacto{
+            width: 100%;
+        }  
     }
-    .input-box label{
-        font-size: .875rem;
+     
+
+    /************ sobre ***************/
+
+    .btn-a {
+        width: 50%;
+        padding: .5rem 0;
+       
     }
-
-    /************ sobre *************/
-
-    .cont-sobre{
-        margin-top: 5rem;
-    }
-
 }

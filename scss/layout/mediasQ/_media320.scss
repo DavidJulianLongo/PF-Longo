@@ -55,26 +55,40 @@
     }
 
     /************* contacto **************/
+    
+    .cont-contacto{
+        .contacto-contenido{
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+            .contacto-icon{
+                p{
+                    margin-left: .25rem;
+                    font-size: .625rem;
+                }
+            }
+        }   
+    }
+   
 
-    .contacto-contenido h1{
-        font-size: 1.5rem;
+   .cont-form{
+        .form-contacto{
+            padding: 2rem 1.25rem;
+            .input-box{
+                label{
+                    font-size: .75rem;
+                }
+                .btn-submit{
+                    font-size: .75rem;
+                }
+            }
+        }   
     }
 
-    .contacto-contenido p{
-        font-size: .75rem;
-    }
-
-    .form-contacto{
-        padding: 2rem 1.25rem;
-    }
-
-    .input-box label{
-        font-size: .75rem;
-    }
-
-    .input-box .btn-submit{
-        font-size: .75rem;
-    }
+    
 
     /*********** sobre *******************/
 

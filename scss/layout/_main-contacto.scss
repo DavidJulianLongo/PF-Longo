@@ -1,122 +1,126 @@
 .contacto{
-    display: flex;
-    justify-content: center;
-    margin: 5.625rem auto;
-    gap: 3rem;
+    @include flex(row, center, none, 3rem);
+    margin: 7.5rem 0;
 }
+
+
 .cont-contacto{
-    max-width: 31.25rem;
+    width: 31.25rem;
+    .contacto-contenido{
+        h1{
+            font-family: $font-titulo;
+            font-size: 4rem;
+            font-weight: 500;
+            color: map-get($colors, rosa);
+            line-height: 3.125rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-family: $font;
+            font-weight: 400;
+            color: map-get($colors, grisOscuro);
+        }
+        .contacto-icon{
+            display:flex;
+            flex-direction: column;
+            margin-top: 3.125rem;
+            p{
+                display: inline-block;
+                font-family: $font;
+                font-size: .75rem;
+                color: map-get($colors, grisOscuro);
+                margin-left: 1rem;
+            }
+        }
+    }  
 }
 
-.cont-contacto h1{
-    font-family: "Poppins", sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
-    color: #F38FB0;
-    line-height: 3.125rem;
-    margin-bottom: 3rem;
-}
 
-.contacto-contenido p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #555555;
-}
 
-.contacto-icon{
-    display:flex;
-    flex-direction: column;
-    margin-top: 3.125rem;
-}
-
-.contacto-icon p{
-    display: inline-block;
-    font-family: "Roboto", sans-serif;
-    font-size: .75rem;
-    color: #555555;
-    margin-left: 1rem;
-
-}
 
 .cont-form{
-    display: flex;
-    justify-content: center;
-}
-
-.form-contacto{
-    padding: 2.5rem;
+    @include flex(row, center, none, none);
     width: 31.25rem;
-    border-radius: .5rem;
-    background-color: #d9d9d923;
-    box-shadow: 0 0 .9375rem #F38FB0;
-}
-
-.input-box{
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #555555;
-}
-
-.input-box label{
-    font-size: 1rem;
-    margin-bottom: .5rem;
-}
-
-.input-box input{
-    font-family: "Roboto", sans-serif;
-    font-size: .8rem;
-    font-weight: 400;
-    color: #555555;
-    height: 1.875rem;
-    margin-bottom: 1rem;
-    padding: .5rem  .8rem;
-    outline: none;
-    border: none;
-    border-radius: .5rem;
-    box-shadow: 0 0 .3125rem rgba(0, 0, 0, .1);
-    
-}
-
-.input-box textarea{
-    font-family: "Roboto", sans-serif;
-    font-size: .8rem;
-    font-weight: 400;
-    color: #555555;
-    margin-bottom: 2rem;
-    padding: 1.2rem  1.5rem;
-    outline: none;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 0 .3125rem rgba(0, 0, 0, .1);
-    resize: none;
-}
-
-.input-box .btn-submit{
-    font-family: "Poppins", sans-serif;
-    background-color: #555555;
-    color: #ffffff;
-    font-size: .8rem;
-    font-weight: 500;
-    height: auto;
-    border: none;
-    border-radius: 1rem;
-    margin-bottom: 0;
-    width: 50%;
     align-self: center;
-    cursor: pointer;
-    transition: all .3s ease;
-    
+    .form-contacto{
+        width: 100%;
+        padding: 2.5rem;
+        border-radius: .5rem;
+        background-color: map-get($colors, gris);
+        box-shadow: 0 0 .9375rem #F38FB0;
+        .input-box{
+            display: flex;
+            flex-direction: column;
+            font-family: $font-titulo;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: map-get($colors, grisOscuro);
+            label{
+                font-size: 1rem;
+                margin-bottom: .5rem;
+            }
+            input{
+                font-family: $font;
+                font-size: .8rem;
+                font-weight: 400;
+                color: map-get($colors, grisOscuro);
+                height: 1.875rem;
+                margin-bottom: 1rem;
+                padding: .5rem  .8rem;
+                outline: none;
+                border: none;
+                border-radius: .5rem;
+                box-shadow: 0 0 .3125rem #0000001a; 
+            }
+            textarea{
+                font-family: $font;
+                font-size: .8rem;
+                font-weight: 400;
+                color: map-get($colors, grisOscuro);
+                margin-bottom: 2rem;
+                padding: 1.2rem  1.5rem;
+                outline: none;
+                border: none;
+                border-radius: 1rem;
+                box-shadow: 0 0 .3125rem #0000001a;
+                resize: none;
+            }
+            .btn-submit{
+                font-family: $font-titulo;
+                background-color: map-get($colors, grisOscuro);
+                color: #ffffff;
+                font-size: .8rem;
+                font-weight: 500;
+                height: auto;
+                border: none;
+                border-radius: 1rem;
+                margin-bottom: 0;
+                width: 50%;
+                align-self: center;
+                transition: all .3s ease;
+                &:hover{
+                    background-color: #d9d9d923;
+                    color: #555555;
+                    box-shadow: 0 0 .9375rem #F38FB0;
+                }
+                &:active{
+                    background-color: #cc275e;   
+                }
+            }
+        }
+    }
 }
 
-.input-box .btn-submit:hover{
-    background-color: #d9d9d923;
-    color: #555555;
-    box-shadow: 0 0 .9375rem #F38FB0;
-}
 
-.input-box .btn-submit:focus{
-    background-color: #cc275e;   
-}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 @media (max-width: 991px) {
 
     /****** header-bootstrap ********/
-
+   
     .container-fluid {
         padding: .625rem 1.875rem;
         .navbar-toggler {
@@ -86,39 +86,45 @@
 
 
     /********** contacto *********/
-    .cont-contacto {
-        width: 37.5rem;
+    
+    .contacto{
         margin: 5rem auto;
     }
+    .cont-contacto{
+        .contacto-contenido{
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: .875rem;
+            }
+        }
+    }          
+    
+    
 
-    .contacto-contenido {
-        width: 100%;
-    }
-
-    .contacto-contenido h1 {
-        font-size: 3rem;
-    }
-
+/*
     .cont-form {
         margin-bottom: 6rem;
         padding: 0;
-    }
+    }*/
 
     /********** sobre *********/
-    .art-sobre {
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-        margin: 0 auto;
+    .cont-sobre{
+        margin-top: 5rem;
+        .art-sobre {
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+            margin: 0 auto;
+            .art-img-sobre {
+                width: 100%;
+            }
+            .art-contenido-sobre {
+                margin-top: 1.5rem;
+                padding: 0;
+            }
+        }
     }
-
-    .art-contenido-sobre {
-        margin-top: 1.5rem;
-        padding: 0;
-    }
-
-    .art-img-sobre {
-        width: 100%;
-    }
-
+    
 }
