@@ -2,11 +2,11 @@
     max-width: 46.875rem;
     @include flex(row, none, none, none);
     padding: 1.25rem;
-    box-shadow: 0 0 .9375rem rgba(0, 0, 0, .1);
+    box-shadow: 0 0 .9375rem #0000001a;
     transition: all .5s ease;
     &:hover{
         background-color: map-get($colors, gris);
-        box-shadow: 0 0 .9375rem #F38FB0;
+        box-shadow: 0 0 .9375rem #ffb3b0;
     }
     a .art-card-img{
         transition: all .3s ease;

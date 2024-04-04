@@ -31,6 +31,9 @@
                 font-size: 3rem;
             }
         }
+        .cont-martha-img {
+            width: 90%;
+        }
     } 
     
     /*********** servicios **********/
@@ -70,7 +73,12 @@
     .cont-form{
         .form-contacto{
             width: 100%;
-        }  
+            .input-box{
+                .btn-submit{
+                    font-size: .75rem;
+                }
+            }
+        } 
     }
      
 

@@ -15,6 +15,8 @@
         margin-bottom: 3.125rem;
     }
     .btn-a{
+        @extend .btn-a;
+        /*
         align-self: center;
         display: inline-block;
         font-family: $font;
@@ -32,7 +34,6 @@
         &:active{
             transform: scale(.97);
             background-color: map-get($colors, rosaOscuro);
-        }
+        }*/
     }
 }   
-/* El botón usa el estilo del botón del index */

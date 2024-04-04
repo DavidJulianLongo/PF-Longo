@@ -10,14 +10,14 @@
             line-height: normal;
             text-align: center;
             margin: 0;
-            text-shadow: 0 0 .9375rem rgba(0, 0, 0, 0.089);
+            text-shadow: 0 0 .9375rem #00000017;
             span{
-                color: #F38FB0;
+                color: map-get($colors, rosaOscuro);
             }
         }
         h2{
             background-color: map-get($colors, gris);
-            color: map-get($colors, rosa);
+            color: map-get($colors, rosaOscuro);
             font-family: $font-titulo;
             font-size: 2rem;
             font-weight: 400;
@@ -26,6 +26,8 @@
             text-align: center;
         }
         .btn-a {
+            @extend .btn-a;
+            /*
             align-self: center;
             display: inline-block;
             font-family: $font;
@@ -43,7 +45,7 @@
             &:active{
                 transform: scale(.97);
                 background-color: map-get($colors, rosaOscuro);
-            }
+            }*/
         }
     }
     .martha-img{
