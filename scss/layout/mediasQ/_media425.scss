@@ -87,6 +87,19 @@
     .btn-a {
         width: 50%;
         padding: .5rem 0;
-       
+    }
+
+
+
+    /*********** footer ***************/
+
+    footer{
+        .social-link{
+            a{
+                height: 2rem;
+                width: 2rem;
+                line-height: 2rem;
+            }
+        }
     }
 }
