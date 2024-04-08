@@ -17,15 +17,17 @@
     /********** index **********/
 
     .cont-principal{
-        @include flex(row, center, none, none);
         .presentacion {
             h1{
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
             h2 {
                 font-size: 1.75rem;
             }
         } 
+        .cont-martha-img{
+            width: 37.5rem;
+        }
     }    
 
     /********* servicios ****************/

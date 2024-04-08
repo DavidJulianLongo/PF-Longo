@@ -99,7 +99,7 @@ footer {
       color: #fdfdfd;
       transition: all .3s ease; }
       footer .social-link a:hover {
-        background-color: #F38FB0; }
+        background-color: #ffb3b0; }
 
 /*main-index*/
 .cont-principal {
@@ -411,16 +411,12 @@ footer {
     .container-fluid .navbar-collapse .navbar-nav .nav-link {
       font-size: 1rem; }
   /********** index **********/
-  .cont-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: none;
-    gap: none; }
-    .cont-principal .presentacion h1 {
-      font-size: 3rem; }
-    .cont-principal .presentacion h2 {
-      font-size: 1.75rem; }
+  .cont-principal .presentacion h1 {
+    font-size: 3.5rem; }
+  .cont-principal .presentacion h2 {
+    font-size: 1.75rem; }
+  .cont-principal .cont-martha-img {
+    width: 37.5rem; }
   /********* servicios ****************/
   .cont-articles {
     flex-wrap: wrap; }
@@ -453,11 +449,6 @@ footer {
 
 /*media1024*/
 @media (max-width: 1024px) {
-  /********** index **********/
-  .cont-principal .presentacion h1 {
-    font-size: 2.7rem; }
-  .cont-principal .presentacion h2 {
-    font-size: 1.5rem; }
   /********** servicios **********/
   .cont-articles {
     gap: 6.25rem; }
@@ -465,11 +456,6 @@ footer {
     padding: 6.25rem; }
     .cont-sugerencia p {
       font-size: 1.2rem; }
-  /********** galeria **********/
-  .cont-galeria {
-    margin: 5rem 0; }
-  .galeria-titulo h1 {
-    font-size: 3rem; }
   /********** sobre *********/
   .cont-sobre {
     max-width: 56.25rem; } }
@@ -540,11 +526,6 @@ footer {
     font-size: 3rem; }
   .cont-contacto .contacto-contenido p {
     font-size: .875rem; }
-  /*
-    .cont-form {
-        margin-bottom: 6rem;
-        padding: 0;
-    }*/
   /********** sobre *********/
   .cont-sobre {
     margin-top: 5rem; }
