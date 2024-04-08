@@ -3,7 +3,6 @@
     /****** header-bootstrap ********/
    
     .container-fluid {
-        padding: .625rem 1.875rem;
         .navbar-toggler {
             border: none !important;
             &:focus {
@@ -79,7 +78,12 @@
 
 
     /********** galería **********/
-    .galeria {
+    .cont-galeria{
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .galeria, .galeria-familiar {
         column-gap: .5rem;
         row-gap: 1.5rem;
     }

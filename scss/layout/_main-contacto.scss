@@ -1,12 +1,12 @@
 .contacto{
     @include flex(row, center, none, 3rem);
     margin: 7.5rem 0;
-
 }
 
 
 .cont-contacto{
     width: 31.25rem;
+    align-content: center;
     .contacto-contenido{
         h1{
             font-family: $font-titulo;
@@ -14,7 +14,7 @@
             font-weight: 500;
             color: map-get($colors, rosaOscuro);
             line-height: 3.125rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         p{
             font-family: $font;
@@ -24,7 +24,7 @@
         .contacto-icon{
             display:flex;
             flex-direction: column;
-            margin-top: 3.125rem;
+            margin-top: 2rem;
             p{
                 display: inline-block;
                 font-family: $font;
@@ -35,8 +35,6 @@
         }
     }  
 }
-
-
 
 
 .cont-form{

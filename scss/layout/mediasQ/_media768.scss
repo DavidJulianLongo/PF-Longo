@@ -1,5 +1,13 @@
 @media (max-width: 768px){
 
+    /********* header-boostrap ************/
+    .container-fluid{
+        a .navbar-brand{
+            width: 15.625rem;
+        }
+    }
+   
+
     /********* servicios *********/
 
     .cont-articles{
