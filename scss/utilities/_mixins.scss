@@ -6,3 +6,12 @@
     gap: $gap;
 }
 
+@mixin grid($column, $row, $justify, $aling, $columnGap, $rowGap){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-items: $aling;
+    column-gap: $columnGap;
+    row-gap: $rowGap;
+}

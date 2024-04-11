@@ -33,7 +33,7 @@
     }
 
     .galeria, .galeria-familiar{
-        grid-template-columns: 1fr;
+        @include grid(1fr, none, none, none, none, 1.25rem);
     }
 
     .galeria img:nth-child(1){
