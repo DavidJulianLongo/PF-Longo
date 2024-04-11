@@ -42,12 +42,19 @@
         margin: 3rem auto;
     }
 
+    .art-card{
+        .art-card-contenido{
+            p{
+                font-size: .75rem;
+            }
+        }
+    }
+
     .cont-sugerencia{
         padding: 1.5rem;
         p{
             font-size: 1rem;
         }
-    
     }
     
     /*********** galeria ************/
@@ -84,11 +91,20 @@
 
     /************ sobre ***************/
 
-    .btn-a {
-        width: 50%;
-        padding: .5rem 0;
+    .cont-sobre{
+        .art-sobre{
+            .art-contenido-sobre{
+                h2{
+                    font-size: 1.25rem;
+                }
+                .btn-sobre {
+                    width: 50%;
+                    padding: .5rem 0;
+                }
+            }
+        }
     }
-
+   
 
 
     /*********** footer ***************/

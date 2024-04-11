@@ -53,9 +53,6 @@
                 padding: 1rem;
             }
             .btn-a {
-                font-size: .8rem;
-                width: 10rem;
-                padding: .6rem;
                 margin: 0 auto;
             }
         }
@@ -68,7 +65,7 @@
     /********** servicios *********/
 
     .cont-sugerencia{
-        .btn-a {
+        .btn-serv {
             font-size: .8rem;
             width: 10rem;
             padding: .6rem;
@@ -110,9 +107,9 @@
     .cont-sobre{
         margin-top: 5rem;
         .art-sobre {
+            @include flex(column, none, center, none);
             flex-direction: column;
             width: 70%;
-            align-items: center;
             margin: 0 auto;
             .art-img-sobre {
                 width: 100%;

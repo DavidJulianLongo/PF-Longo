@@ -2,8 +2,7 @@
     margin: 10rem auto;
     max-width: 75rem;
     .art-sobre{
-        display: flex;
-        align-items: center;
+        @include flex(row, none, center, none);
         .art-contenido-sobre{
             padding-left: 2rem;
             h1, h2{
@@ -14,32 +13,17 @@
                 font-family: $font;
                 color: map-get($colors, grisOscuro);
                 margin-bottom: 3rem;
+            }
+            .btn-sobre{
+                @extend %btn;
             }      
         }
     }
 }
 
 
-.btn-a {
-    align-self: center;
-    display: inline-block;
-    font-family: $font;
-    font-size: .75rem;
-    background-color: map-get($colors, grisOscuro );
-    color: #ffffff;
-    width: 6rem;
-    padding: 1rem 1.5rem ;
-    border-radius: .5rem;
-    text-align: center;
-    transition: all .3s ease;
-    &:hover{
-        background-color: map-get($colors, rosa);
-    }
-    &:active{
-        transform: scale(.97);
-        background-color: map-get($colors, rosaOscuro);
-    }
-}
+
+
 
 
 

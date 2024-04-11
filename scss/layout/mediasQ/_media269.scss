@@ -32,7 +32,7 @@
     /********** servicios ****************/
 
     .cont-sugerencia{
-        .btn-a{
+        .btn-serv{
             font-size: .625rem;
             width: 5rem;
             padding: .5rem;
@@ -44,18 +44,13 @@
     .cont-sobre{
         .art-sobre{
             .art-contenido-sobre{
-                h2{
-                    font-size: 1.25rem;
-                }
                 p{
                     font-size: .75rem;
-                }      
+                } 
+                .btn-sobre {
+                    font-size: .625rem;
+                }   
             }
         }
     }
-
-    .btn-a {
-        font-size: .625rem;
-    }
-
 }

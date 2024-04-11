@@ -12,7 +12,6 @@
                 padding: .5rem;
             }
             .btn-a{
-                font-size: .75rem;
                 width: 6rem;
                 padding: .5rem;
             }
@@ -34,8 +33,7 @@
     }
     
     .cont-sugerencia{
-        .btn-a{
-            font-size: .75rem;
+        .btn-serv{
             width: 6rem;
             padding: .5rem;
         }
@@ -87,6 +85,19 @@
                 }
             }
         }   
+    }
+
+
+    /********** sobre *****************/
+
+    .cont-sobre{
+        .art-sobre{
+            .art-contenido-sobre{
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 
 }

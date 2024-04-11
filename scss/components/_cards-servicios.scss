@@ -8,12 +8,7 @@
         background-color: map-get($colors, gris);
         box-shadow: 0 0 .9375rem #ffb3b0;
     }
-    a .art-card-img{
-        transition: all .3s ease;
-        &:hover{
-            transform: scale(1.01);
-        }
-    }
+   
     .art-card-contenido{
         @include flex(column, center, none, none);
         margin-left: 1.25rem;
