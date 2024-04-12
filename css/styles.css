@@ -120,7 +120,12 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: none;
-  gap: none; }
+  gap: none;
+  margin: 6.25rem 0 6.25rem 0;
+  /*
+    .martha-img{
+        width: 100%;   
+    }*/ }
   .cont-principal .presentacion {
     display: flex;
     flex-direction: column;
@@ -149,8 +154,40 @@ footer {
       text-align: center; }
     .cont-principal .presentacion .btn-a {
       align-self: center; }
-  .cont-principal .martha-img {
-    width: 100%; }
+  .cont-principal .grid-container {
+    max-width: 45.3125rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    justify-content: none;
+    align-items: none;
+    column-gap: none;
+    row-gap: none; }
+    .cont-principal .grid-container .item {
+      border: 0.1875rem solid #F8F9FA;
+      border-radius: 50%;
+      box-shadow: 0.625rem 0.625rem 0.625rem 0 #EDC8C3; }
+      .cont-principal .grid-container .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 50%; }
+    .cont-principal .grid-container .item1 {
+      grid-area: 1/5/6/10; }
+    .cont-principal .grid-container .item2 {
+      grid-area: 5/1/11/7; }
+    .cont-principal .grid-container .item3 {
+      grid-area: 4/6/11/13; }
+    .cont-principal .grid-container .item4 {
+      grid-area: 2/-1/8/-7; }
+    .cont-principal .grid-container .item5 {
+      grid-area: 7/-2/11/-6; }
+    .cont-principal .grid-container .item6 {
+      grid-area: -1/3/-9/11; }
+    .cont-principal .grid-container .item7 {
+      grid-area: -2/-2/-8/-8; }
 
 /*main-sobre*/
 .cont-sobre {
@@ -386,8 +423,8 @@ footer {
     font-size: 3.5rem; }
   .cont-principal .presentacion h2 {
     font-size: 1.75rem; }
-  .cont-principal .cont-martha-img {
-    width: 37.5rem; }
+  .cont-principal .grid-container {
+    max-width: 34.375rem; }
   /********* servicios ****************/
   .cont-articles {
     flex-wrap: wrap; }
@@ -439,7 +476,7 @@ footer {
     .container-fluid .navbar-toggler:focus {
       box-shadow: none !important; }
       .container-fluid .navbar-toggler:focus:active {
-        box-shadow: 0 0 .9375rem #F38FB0 !important; }
+        box-shadow: 0 0 0.9375rem #ffb3b0 !important; }
   .container-fluid .navbar-collapse .navbar-nav {
     align-items: center;
     gap: 0;
@@ -447,11 +484,11 @@ footer {
     .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
       transition: all ease; }
       .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:active {
-        color: #F38FB0;
-        text-shadow: 0 0 .9375rem #F38FB0; }
+        color: #ffb3b0;
+        text-shadow: 0 0 0.9375rem #ffb3b0; }
     .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
       text-align: center;
-      min-width: 100px; }
+      min-width: 6.25rem; }
   /********** index **********/
   .cont-principal {
     display: flex;
@@ -472,9 +509,9 @@ footer {
       padding: 1rem; }
     .cont-principal .presentacion .btn-a {
       margin: 0 auto; }
-    .cont-principal .cont-martha-img {
-      width: 75%;
-      margin: 0 auto; }
+    .cont-principal .grid-container {
+      margin: 5rem auto;
+      max-width: 80%; }
   /********** servicios *********/
   .cont-sugerencia .btn-serv {
     font-size: .8rem;
@@ -551,6 +588,8 @@ footer {
   /************ index ***************/
   .cont-principal .presentacion h1 {
     font-size: 3.5rem; }
+  .cont-principal .grid-container {
+    margin: 2rem auto; }
   /*********** servicios **********/
   .cont-sugerencia {
     padding: 3rem; }
@@ -633,8 +672,6 @@ footer {
   /*********** index **************/
   .cont-principal .presentacion h1 {
     font-size: 3rem; }
-  .cont-principal .cont-martha-img {
-    width: 90%; }
   /*********** servicios **********/
   .cont-articles {
     margin: 3rem auto; }

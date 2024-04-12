@@ -1,5 +1,6 @@
 .cont-principal{
     @include flex(row, space-evenly, none, none);
+    margin: 6.25rem 0 6.25rem 0;
     .presentacion{
         @include flex(column, center, none, none);
         h1{
@@ -30,9 +31,53 @@
            align-self: center;
         }
     }
+    .grid-container{
+        max-width: 45.3125rem;
+        aspect-ratio: 1/1;
+        @include grid(repeat(16, 1fr), repeat(16, 1fr), none, none, none, none);
+        .item{
+            border: .1875rem solid map-get($colors, gris);
+            border-radius: 50%;
+            box-shadow: .625rem .625rem .625rem 0 map-get($colors, rosa);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                overflow: hidden;
+                border-radius: 50%;
+                
+             }
+        }
+        .item1{
+            grid-area: 1/5/6/10;
+        }
+        .item2{
+            grid-area: 5/1/11/7;
+        }
+        .item3{
+            grid-area: 4/6/11/13;
+        }
+        .item4{
+            grid-area: 2/-1/8/-7;
+        }
+        .item5{
+            grid-area: 7/-2/11/-6;
+        }
+        .item6{
+            grid-area: -1/3/-9/11;
+        }
+        .item7{
+            grid-area: -2/-2/-8/-8;
+        }
+    }
+
+
+
+
+    /*
     .martha-img{
         width: 100%;   
-    }
+    }*/
 }
 
 
