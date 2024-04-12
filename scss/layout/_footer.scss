@@ -22,7 +22,7 @@ footer{
             color: map-get($colors, blanco);
             transition: all .3s ease;
             &:hover{
-                background-color: #ffb3b0;
+                background-color: map-get($colors, rosaOscuro);
             }
         }
     }
