@@ -41,6 +41,7 @@
     @include flex(row, center, none, none);
     width: 31.25rem;
     align-self: center;
+    transition: all .3s ease;
     .form-contacto{
         width: 100%;
         padding: 2.5rem;
@@ -69,6 +70,10 @@
                 border: none;
                 border-radius: .5rem;
                 box-shadow: 0 0 .3125rem #0000001a; 
+                transition: all .3s ease;
+                &:focus{
+                    box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
+                }
             }
             textarea{
                 font-family: $font;
@@ -82,11 +87,15 @@
                 border-radius: 1rem;
                 box-shadow: 0 0 .3125rem #0000001a;
                 resize: none;
+                transition: all .3s ease;
+                &:focus{
+                    box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
+                }
             }
             .btn-submit{
                 font-family: $font-titulo;
                 background-color: map-get($colors, grisOscuro);
-                color: #ffffff;
+                color: map-get($colors, blanco);
                 font-weight: 500;
                 height: auto;
                 border: none;
@@ -96,12 +105,12 @@
                 align-self: center;
                 transition: all .3s ease;
                 &:hover{
-                    background-color: #d9d9d923;
-                    color: #555555;
-                    box-shadow: 0 0 .9375rem #EDC8C3;
+                    background-color: map-get($colors, gris);
+                    color: map-get($colors, grisOscuro);
+                    box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
                 }
                 &:active{
-                    background-color: #ffb3b0;   
+                    background-color: map-get($colors, rosaOscuro);   
                 }
             }
         }

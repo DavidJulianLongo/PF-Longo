@@ -4,15 +4,16 @@
    
     .container-fluid {
         .navbar-toggler {
-            border: none !important;
-            &:focus {
-                box-shadow: none !important;
-                &:active {
-                    box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro) !important;
-                }
+            border: none;
+            &:focus{
+                box-shadow: none;
+            }
+            &:active{
+                box-shadow: none;
             }
         }
         .navbar-collapse {
+           
             .navbar-nav {
                 align-items: center;
                 gap: 0;
@@ -34,6 +35,7 @@
         } 
     }
 
+    
     /********** index **********/
 
     .cont-principal {
