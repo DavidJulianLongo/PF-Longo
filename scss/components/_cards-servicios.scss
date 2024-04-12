@@ -1,19 +1,17 @@
 .art-card{
-    max-width: 46.875rem;
+    width: 43.75rem;
     @include flex(row, none, none, none);
     padding: 1.25rem;
     box-shadow: 0 0 .9375rem #0000001a;
     transition: all .5s ease;
     &:hover{
         background-color: map-get($colors, gris);
-        box-shadow: 0 0 .9375rem #ffb3b0;
+        box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
     }
-   
     .art-card-contenido{
         @include flex(column, center, none, none);
-        margin-left: 1.25rem;
+        margin-left: 1.5rem;
         h2{
-            margin-bottom: 16px;
             font-family: $font-titulo;
             font-size: 1.8rem;
             font-weight: 500;
@@ -24,6 +22,9 @@
             font-weight: 300;
             color: map-get($colors, grisOscuro);
         }
+    }
+    .btn-card{
+        @extend %btn;
     }
 }   
 
