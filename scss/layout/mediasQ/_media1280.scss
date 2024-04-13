@@ -39,7 +39,7 @@
     /********** sobre *********/
     
     .cont-sobre{
-        max-width: 60rem;
+        width: 85%;
     }
 
 
@@ -49,16 +49,6 @@
         width: 90%;
         margin: 7.5rem auto;
     }
-    
-    .cont-contacto{
-        align-self: center;
-        /*width: 100%;*/
-        .contacto-contenido{
-            .contacto-icon{
-                @include flex(row, space-between, none, 5px);
-                flex-wrap: wrap;
-            }
-        }
-    }
+   
 }
 

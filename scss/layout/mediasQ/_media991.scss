@@ -67,6 +67,9 @@
     /********** servicios *********/
 
     .cont-sugerencia{
+        p{
+            font-size: 1.25rem;
+        }
         .btn-serv {
             font-size: .8rem;
             width: 10rem;
@@ -95,6 +98,7 @@
         margin: 5rem auto;
     }
     .cont-contacto{
+        align-self: center;
         .contacto-contenido{
             h1{
                 font-size: 3rem;
@@ -112,7 +116,6 @@
         margin-top: 5rem;
         .art-sobre {
             @include flex(column, none, center, none);
-            flex-direction: column;
             width: 70%;
             margin: 0 auto;
             .art-img-sobre {

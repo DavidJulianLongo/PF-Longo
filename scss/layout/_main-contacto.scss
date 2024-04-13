@@ -22,8 +22,8 @@
             color: map-get($colors, grisOscuro);
         }
         .contacto-icon{
-            display:flex;
-            flex-direction: column;
+            @include flex(row, space-between, none, 5px);
+            flex-wrap: wrap;
             margin-top: 2rem;
             p{
                 display: inline-block;

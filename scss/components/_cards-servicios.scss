@@ -19,12 +19,8 @@
         }
         p{
             font-family: $font;
-            font-weight: 300;
             color: map-get($colors, grisOscuro);
         }
-    }
-    .btn-card{
-        @extend %btn;
     }
 }   
 
