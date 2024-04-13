@@ -91,12 +91,14 @@
     /********** contacto *********/
     
     .contacto{
+        @include flex(column, center, none, 3rem);
         margin: 5rem auto;
     }
     .cont-contacto{
         .contacto-contenido{
             h1{
                 font-size: 3rem;
+                text-align: center;
             }
             p{
                 font-size: .875rem;

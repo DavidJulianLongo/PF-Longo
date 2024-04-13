@@ -46,27 +46,19 @@
     /********** contacto ****************/
 
     .contacto{
-        @include flex(column, center, none, 3rem);
-        width: 31.25rem;
+        width: 90%;
         margin: 7.5rem auto;
     }
     
     .cont-contacto{
         align-self: center;
-        width: 100%;
+        /*width: 100%;*/
         .contacto-contenido{
-            h1, p{
-                text-align: center;
-            }
             .contacto-icon{
                 @include flex(row, space-between, none, 5px);
                 flex-wrap: wrap;
             }
         }
-    }
-
-    .cont-form{
-        width: 100%;
     }
 }
 
