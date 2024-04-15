@@ -2,7 +2,7 @@
     width: 43.75rem;
     @include flex(row, none, none, none);
     padding: 1.25rem;
-    box-shadow: 0 0 .9375rem #0000001a;
+    box-shadow: 0 0 .9375rem map-get($colors, box-sombra);
     transition: all .5s ease;
     &:hover{
         background-color: map-get($colors, gris);

@@ -18,12 +18,12 @@
             transition: all .3s ease;
             &:hover{
                 color: map-get($colors, rosaOscuro);
-                text-shadow:  0 0 .9375rem #ffb3b0;
+                text-shadow:  0 0 .9375rem map-get($colors, rosaOscuro);
             }
         }
         .dropdown-menu{
             border:none;
-            box-shadow: 0 0 .9375rem #ffb3b0;
+            box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
         }
     }
 }

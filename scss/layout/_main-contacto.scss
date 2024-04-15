@@ -46,7 +46,7 @@
         width: 100%;
         padding: 2.5rem;
         background-color: map-get($colors, gris);
-        box-shadow: 0 0 .9375rem #0000001a;
+        box-shadow: 0 0 .9375rem map-get($colors, box-sombra);
         .input-box{
             display: flex;
             flex-direction: column;
@@ -69,7 +69,7 @@
                 outline: none;
                 border: none;
                 border-radius: .5rem;
-                box-shadow: 0 0 .3125rem #0000001a; 
+                box-shadow: 0 0 .3125rem map-get($colors, box-sombra); 
                 transition: all .3s ease;
                 &:focus{
                     box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
@@ -85,7 +85,7 @@
                 outline: none;
                 border: none;
                 border-radius: 1rem;
-                box-shadow: 0 0 .3125rem #0000001a;
+                box-shadow: 0 0 .3125rem map-get($colors, box-sombra);
                 resize: none;
                 transition: all .3s ease;
                 &:focus{
