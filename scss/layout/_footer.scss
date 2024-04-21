@@ -1,28 +1,108 @@
 footer{
     background-color: map-get($colors, grisFooter);
-    padding: 5rem 0;
-    .footer-titulo{
-        font-family: $font-titulo;
-        font-weight: 500;
-        font-size: 1rem;
-        color: map-get($colors, blanco);
-        margin-bottom: 3.125rem;
-        text-align: center;
+    padding: 5rem 0 3rem 0;
+    .footer-cont{
+        @include flex(row, space-between, start, 2.5rem);
+        flex-wrap: wrap;
+        margin: 0 auto 6.25rem auto;
+        width: 80%;
     }
-    .social-link{
-        text-align: center;
-        a{
+    .footer-nav{
+        width: max-content;
+        margin-bottom: 1.875rem;
+        img{
+            width: 9.375rem;
+            margin-bottom: 1.25rem;
+        }
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+            li{
+                a{
+                    color: map-get($colors, grisOscuro);
+                    font-size: .875rem;
+                    font-weight: 500;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: map-get($colors, rosaOscuro);
+                        text-shadow:  0 0 .9375rem map-get($colors, rosaOscuro);
+                    }
+                }
+            }
+        }
+    }
+    .footer-contacto{
+        @extend .footer-nav;
+        h3{
             display: inline-block;
-            height: 2.5rem;
-            width: 2.5rem;
-            background-color: map-get($colors, grisOscuro);
-            margin: .625rem .625rem ;
-            line-height: 2.5rem;
-            border-radius: 50%;
-            color: map-get($colors, blanco);
-            transition: all .3s ease;
-            &:hover{
-                background-color: map-get($colors, rosaOscuro);
+            font-family: $font-titulo;
+            font-weight: 500;
+            font-size: 1rem;
+            border-bottom: 2px solid map-get($colors, rosaOscuro);
+            color: map-get($colors, grisOscuro);
+            margin-bottom: 1.25rem;
+            padding-bottom: .3125rem;
+            
+        }
+        .contacto-icon{
+            i{
+                height: 1.5rem;
+                width: 1.5rem;
+                background-color: map-get($colors, grisOscuro);
+                margin: .625rem 5px .625rem 0;
+                line-height: 1.5rem;
+                border-radius: 50%;
+                color: map-get($colors, blanco);
+                text-align: center;
+            }
+            p{
+                display: inline-block;
+                font-size: .875rem;
+            }
+        }
+    }
+    .redes{
+        @extend .footer-contacto;
+        .redes-link{
+            a{
+                display: inline-block;
+                height: 2rem;
+                width: 2rem;
+                background-color: map-get($colors, grisOscuro);
+                margin: .625rem .9375rem .625rem 0;
+                line-height: 2rem;
+                border-radius: 50%;
+                color: map-get($colors, blanco);
+                text-align: center;
+                transition: all .3s ease;
+                &:hover{
+                    background-color: map-get($colors, rosaOscuro);
+                }
+            }
+        }
+    }
+
+    .creador{
+        border-top: .0313rem solid map-get($colors, grisOscuro);
+        width: 90%;
+        margin: 0 auto;
+        align-content: center;
+        h4{
+            font-size: .875rem;
+            text-align: center;
+            margin-top: 1.5625rem;
+            padding: 0 1rem;
+        }
+        .redes-dl{
+            text-align: center;
+            i{
+                margin: .625rem .3125rem .625rem 0;
+                color: black;
+                align-content: center;
+                transition: all .3s ease;
+                &:hover{
+                    color: #be2929;
+                }
             }
         }
     }

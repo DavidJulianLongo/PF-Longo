@@ -88,29 +88,87 @@ body {
 /******               layout              ******/
 /*footer*/
 footer {
-  background-color: #24262b;
-  padding: 5rem 0; }
-  footer .footer-titulo {
+  background-color: #b9b9b981;
+  padding: 5rem 0 3rem 0; }
+  footer .footer-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin: 0 auto 6.25rem auto;
+    width: 80%; }
+  footer .footer-nav, footer .footer-contacto, footer .redes {
+    width: max-content;
+    margin-bottom: 1.875rem; }
+    footer .footer-nav img, footer .footer-contacto img, footer .redes img {
+      width: 9.375rem;
+      margin-bottom: 1.25rem; }
+    footer .footer-nav ul, footer .footer-contacto ul, footer .redes ul {
+      padding-left: 0;
+      margin-bottom: 0; }
+      footer .footer-nav ul li a, footer .footer-contacto ul li a, footer .redes ul li a {
+        color: #555555;
+        font-size: .875rem;
+        font-weight: 500;
+        transition: all .3s ease; }
+        footer .footer-nav ul li a:hover, footer .footer-contacto ul li a:hover, footer .redes ul li a:hover {
+          color: #ffb3b0;
+          text-shadow: 0 0 0.9375rem #ffb3b0; }
+  footer .footer-contacto h3, footer .redes h3 {
+    display: inline-block;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    border-bottom: 2px solid #ffb3b0;
+    color: #555555;
+    margin-bottom: 1.25rem;
+    padding-bottom: .3125rem; }
+  footer .footer-contacto .contacto-icon i, footer .redes .contacto-icon i {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #555555;
+    margin: .625rem 5px .625rem 0;
+    line-height: 1.5rem;
+    border-radius: 50%;
     color: #fdfdfd;
-    margin-bottom: 3.125rem;
     text-align: center; }
-  footer .social-link {
-    text-align: center; }
-    footer .social-link a {
-      display: inline-block;
-      height: 2.5rem;
-      width: 2.5rem;
-      background-color: #555555;
-      margin: .625rem .625rem;
-      line-height: 2.5rem;
-      border-radius: 50%;
-      color: #fdfdfd;
-      transition: all .3s ease; }
-      footer .social-link a:hover {
-        background-color: #ffb3b0; }
+  footer .footer-contacto .contacto-icon p, footer .redes .contacto-icon p {
+    display: inline-block;
+    font-size: .875rem; }
+  footer .redes .redes-link a {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: #555555;
+    margin: .625rem .9375rem .625rem 0;
+    line-height: 2rem;
+    border-radius: 50%;
+    color: #fdfdfd;
+    text-align: center;
+    transition: all .3s ease; }
+    footer .redes .redes-link a:hover {
+      background-color: #ffb3b0; }
+  footer .creador {
+    border-top: 0.0313rem solid #555555;
+    width: 90%;
+    margin: 0 auto;
+    align-content: center; }
+    footer .creador h4 {
+      font-size: .875rem;
+      text-align: center;
+      margin-top: 1.5625rem;
+      padding: 0 1rem; }
+    footer .creador .redes-dl {
+      text-align: center; }
+      footer .creador .redes-dl i {
+        margin: .625rem .3125rem .625rem 0;
+        color: black;
+        align-content: center;
+        transition: all .3s ease; }
+        footer .creador .redes-dl i:hover {
+          color: #be2929; }
 
 /*main-index*/
 .cont-principal {
@@ -119,7 +177,7 @@ footer {
   justify-content: space-evenly;
   align-items: none;
   gap: none;
-  margin: 3.125rem 0 6.25rem 0; }
+  margin: 3.125rem 0 12.5rem 0; }
   .cont-principal .presentacion {
     display: flex;
     flex-direction: column;
@@ -232,7 +290,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   gap: 3rem;
   margin: 7.5rem 0; }
 
@@ -690,12 +748,7 @@ footer {
     font-size: 1.25rem; }
   .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre {
     width: 50%;
-    padding: .5rem 0; }
-  /*********** footer ***************/
-  footer .social-link a {
-    height: 2rem;
-    width: 2rem;
-    line-height: 2rem; } }
+    padding: .5rem 0; } }
 
 /*media320*/
 @media (max-width: 320px) {
@@ -739,7 +792,12 @@ footer {
       padding: .5rem .5rem; }
   /********** sobre *****************/
   .cont-sobre .art-sobre .art-contenido-sobre h2 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  /************* footer ***************/
+  footer .footer-nav img, footer .footer-contacto img, footer .redes img {
+    width: 7.8125rem; }
+  footer .footer-contacto .contacto-icon p, footer .redes .contacto-icon p {
+    font-size: .625rem; } }
 
 /*media269*/
 @media (max-width: 269px) {
