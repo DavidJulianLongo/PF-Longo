@@ -13,6 +13,7 @@
     /************ index  ************/
     
     .cont-principal{
+        margin-bottom: 6.25rem;
         .presentacion{
             h1{
                 font-size: 2rem;
@@ -52,6 +53,15 @@
                     font-size: .625rem;
                 }   
             }
+        }
+    }
+
+
+    /************* footer *****************/
+    footer{
+        .footer-cont{
+            @include flex(row, space-between, none, 1rem);
+
         }
     }
 }

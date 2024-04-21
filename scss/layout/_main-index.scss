@@ -1,6 +1,6 @@
 .cont-principal{
     @include flex(row, space-evenly, none, none);
-    margin: 3.125rem 0 12.5rem 0;
+    margin: 3.125rem 0 15.625rem 0;
     .presentacion{
         @include flex(column, center, none, none);
         h1{
@@ -12,9 +12,6 @@
             text-align: center;
             margin: 0;
             text-shadow: 0 0 .9375rem map-get($colors, box-sombra);
-            span{
-                color: map-get($colors, rosaOscuro);
-            }
         }
         h2{
             background-color: map-get($colors, gris);

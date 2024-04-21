@@ -2,30 +2,30 @@ footer{
     background-color: map-get($colors, grisFooter);
     padding: 5rem 0 3rem 0;
     .footer-cont{
-        @include flex(row, space-between, start, 2.5rem);
+        @include flex(row, space-between, none, 1rem);
         flex-wrap: wrap;
         margin: 0 auto 6.25rem auto;
-        width: 80%;
+        width: 85%;
     }
     .footer-nav{
-        width: max-content;
+        width: 13.75rem;
         margin-bottom: 1.875rem;
         img{
-            width: 9.375rem;
+            width: 7.8125rem;
             margin-bottom: 1.25rem;
         }
         ul{
             padding-left: 0;
             margin-bottom: 0;
             li{
+                margin-bottom: .625rem;
                 a{
                     color: map-get($colors, grisOscuro);
-                    font-size: .875rem;
-                    font-weight: 500;
+                    font-family: $font;
+                    font-size: .75rem;
                     transition: all .3s ease;
                     &:hover{
                         color: map-get($colors, rosaOscuro);
-                        text-shadow:  0 0 .9375rem map-get($colors, rosaOscuro);
                     }
                 }
             }
@@ -57,7 +57,8 @@ footer{
             }
             p{
                 display: inline-block;
-                font-size: .875rem;
+                font-family: $font;
+                font-size: .75rem;
             }
         }
     }
@@ -88,6 +89,7 @@ footer{
         margin: 0 auto;
         align-content: center;
         h4{
+            font-family: $font-titulo;
             font-size: .875rem;
             text-align: center;
             margin-top: 1.5625rem;

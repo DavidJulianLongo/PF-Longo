@@ -41,7 +41,7 @@
     .cont-principal {
         @include flex(column-reverse, center, none, none);
         padding: 0;
-        margin: 2rem 0 6rem 0;
+        margin: 2rem 0 9.375rem 0;
         .presentacion {
             h1 {
                 background-color: map-get($colors, gris);

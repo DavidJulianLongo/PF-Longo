@@ -120,4 +120,11 @@
         }  
     }
 
+    /************* footer *****************/
+    footer{
+        .footer-cont{
+            @include flex(column, space-between, center, 1rem);
+
+        }
+    } 
 }  
