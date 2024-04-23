@@ -13,7 +13,6 @@
             }
         }
         .navbar-collapse {
-           
             .navbar-nav {
                 align-items: center;
                 gap: 0;
@@ -23,7 +22,6 @@
                         transition: all ease;
                         &:active {
                             color: map-get($colors, rosaOscuro);
-                            text-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
                         }
                     }
                     .dropdown-menu {
@@ -95,7 +93,7 @@
     
     .contacto{
         @include flex(column, center, none, 3rem);
-        margin: 5rem auto;
+        margin: 5rem auto 12.5rem auto;
     }
     .cont-contacto{
         align-self: center;

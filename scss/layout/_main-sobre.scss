@@ -3,6 +3,9 @@
     max-width: 75rem;
     .art-sobre{
         @include flex(row, none, center, none);
+        img{
+            box-shadow: 0 0 .9375rem map-get($colors, box-sombra);
+        }
         .art-contenido-sobre{
             padding-left: 2rem;
             h1, h2{

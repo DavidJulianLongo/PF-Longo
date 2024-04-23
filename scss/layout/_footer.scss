@@ -54,6 +54,7 @@ footer{
                 border-radius: 50%;
                 color: map-get($colors, blanco);
                 text-align: center;
+                
             }
             p{
                 display: inline-block;
@@ -97,7 +98,7 @@ footer{
         }
         .redes-dl{
             text-align: center;
-            i{
+            a{
                 margin: .625rem .3125rem .625rem 0;
                 color: black;
                 align-content: center;

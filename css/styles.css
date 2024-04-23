@@ -166,12 +166,12 @@ footer {
       padding: 0 1rem; }
     footer .creador .redes-dl {
       text-align: center; }
-      footer .creador .redes-dl i {
+      footer .creador .redes-dl a {
         margin: .625rem .3125rem .625rem 0;
         color: black;
         align-content: center;
         transition: all .3s ease; }
-        footer .creador .redes-dl i:hover {
+        footer .creador .redes-dl a:hover {
           color: #be2929; }
 
 /*main-index*/
@@ -258,6 +258,8 @@ footer {
     justify-content: none;
     align-items: center;
     gap: none; }
+    .cont-sobre .art-sobre img {
+      box-shadow: 0 0 0.9375rem #0000001a; }
     .cont-sobre .art-sobre .art-contenido-sobre {
       padding-left: 2rem; }
       .cont-sobre .art-sobre .art-contenido-sobre h1, .cont-sobre .art-sobre .art-contenido-sobre h2 {
@@ -294,7 +296,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin: 7.5rem 0; }
+  margin: 7.5rem auto 15.625rem auto; }
 
 .cont-contacto {
   width: 31.25rem;
@@ -503,8 +505,7 @@ footer {
     width: 85%; }
   /********** contacto ****************/
   .contacto {
-    width: 90%;
-    margin: 7.5rem auto; } }
+    width: 90%; } }
 
 /*media991*/
 @media (max-width: 991px) {
@@ -522,8 +523,7 @@ footer {
     .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
       transition: all ease; }
       .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:active {
-        color: #ffb3b0;
-        text-shadow: 0 0 0.9375rem #ffb3b0; }
+        color: #ffb3b0; }
     .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
       text-align: center;
       min-width: 6.25rem; }
@@ -571,7 +571,7 @@ footer {
     justify-content: center;
     align-items: none;
     gap: 3rem;
-    margin: 5rem auto; }
+    margin: 5rem auto 12.5rem auto; }
   .cont-contacto {
     align-self: center; }
     .cont-contacto .contacto-contenido h1 {
@@ -744,7 +744,7 @@ footer {
     font-size: 2rem; }
   /************ contacto **********/
   .contacto {
-    margin: 3rem auto; }
+    margin: 3rem auto 12.5rem auto; }
   .cont-contacto .contacto-contenido h1 {
     font-size: 2rem;
     margin-bottom: 1.25rem; }
