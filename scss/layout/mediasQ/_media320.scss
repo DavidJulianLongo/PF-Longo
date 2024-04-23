@@ -1,108 +1,119 @@
-@media (max-width: 320px){
+@media (max-width: 320px) {
 
     /********** index ****************/
 
-    .cont-principal{
-        .presentacion{
+    .cont-principal {
+        .presentacion {
             h1 {
                 font-size: 2.5rem;
             }
-            h2{
+
+            h2 {
                 font-size: 1.5rem;
                 padding: .5rem;
             }
-            .btn-a{
-                width: 6rem;
-                padding: .5rem;
-            }
-        }
-    } 
-    
 
-
-    /********** servicios ***********/
-
-    .cont-articles{
-        margin-top: 6rem;
-        .art-card{
-            img{
-                max-width: 95%;
-                margin-top: -3.75rem;
-            }
-        .art-card-contenido{
-            h2{
-                font-size: 1.25rem;
-            }
-            .btn-card{
+            .btn-a {
                 width: 6rem;
                 padding: .5rem;
             }
         }
     }
-}
-    
-    .cont-sugerencia{
-        .btn-serv{
+
+
+
+    /********** servicios ***********/
+
+    .cont-articles {
+        margin-top: 6rem;
+    }
+
+    .art-card {
+        img {
+            max-width: 95%;
+            margin-top: -3.75rem;
+        }
+
+        .art-card-contenido {
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .btn-card {
+                width: 6rem;
+                padding: .5rem;
+            }
+        }
+    }
+
+
+    .cont-sugerencia {
+        .btn-serv {
             width: 6rem;
             padding: .5rem;
         }
     }
 
 
-     /************ galeria **********/
+    /************ galeria **********/
 
-     .cont-galeria{
+    .cont-galeria {
         margin-top: 3rem;
-        h1{
+
+        h1 {
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
-    
-     }
-    
+
+    }
+
 
     /************* contacto **************/
-    
-    .cont-contacto{
-        .contacto-contenido{
-            h1{
+
+    .cont-contacto {
+        .contacto-contenido {
+            h1 {
                 font-size: 1.5rem;
             }
-            p{
+
+            p {
                 font-size: .75rem;
             }
-            .contacto-icon{
-                p{
+
+            .contacto-icon {
+                p {
                     margin-left: .25rem;
                     font-size: .625rem;
                 }
             }
-        }   
+        }
     }
-   
 
-   .cont-form{
-        .form-contacto{
+
+    .cont-form {
+        .form-contacto {
             padding: 2rem 1.25rem;
-            .input-box{
-                label{
+
+            .input-box {
+                label {
                     font-size: .75rem;
                 }
-                .btn-submit{
+
+                .btn-submit {
                     font-size: .625rem;
                     padding: .5rem .5rem;
                 }
             }
-        }   
+        }
     }
 
 
     /********** sobre *****************/
 
-    .cont-sobre{
-        .art-sobre{
-            .art-contenido-sobre{
-                h2{
+    .cont-sobre {
+        .art-sobre {
+            .art-contenido-sobre {
+                h2 {
                     font-size: 1rem;
                 }
             }
