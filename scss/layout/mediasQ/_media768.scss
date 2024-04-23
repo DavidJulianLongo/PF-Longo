@@ -8,29 +8,6 @@
     }
    
 
-    /********* servicios *********/
-
-    .cont-articles{
-        margin: 5rem auto;
-    }
-
-    .art-card{
-        @include flex(column, none, none, none);
-        width: 70%;
-        a .art-card-img {
-            width: 100%;
-        } 
-        .art-card-contenido{
-            margin: 1rem 0 0 0  ;
-            width: 100%;
-            p{
-                font-size: .875rem;
-            }
-        }
-    } 
-        
-       
-        
 
    /********* galeria ***********/
 

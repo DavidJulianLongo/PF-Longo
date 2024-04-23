@@ -64,6 +64,11 @@
 
     /********** servicios *********/
 
+    .cont-articles{
+        @include flex(row, center, none, 12.5rem);
+        flex-wrap: wrap;
+    }
+
     .cont-sugerencia{
         p{
             font-size: 1.25rem;

@@ -2,7 +2,7 @@
 /******               utilities               ******/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
-.cont-principal .presentacion .btn-a, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre, .cont-sugerencia .btn-serv {
+.art-card .art-card-contenido .btn-card, .cont-principal .presentacion .btn-a, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre, .cont-sugerencia .btn-serv {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: .75rem;
@@ -13,11 +13,10 @@
   border-radius: .5rem;
   text-align: center;
   transition: all .3s ease; }
-  .cont-principal .presentacion .btn-a:hover, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:hover, .cont-sugerencia .btn-serv:hover {
-    background-color: #EDC8C3; }
-  .cont-principal .presentacion .btn-a:active, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:active, .cont-sugerencia .btn-serv:active {
-    transform: scale(0.97);
+  .art-card .art-card-contenido .btn-card:hover, .cont-principal .presentacion .btn-a:hover, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:hover, .cont-sugerencia .btn-serv:hover {
     background-color: #ffb3b0; }
+  .art-card .art-card-contenido .btn-card:active, .cont-principal .presentacion .btn-a:active, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:active, .cont-sugerencia .btn-serv:active {
+    transform: scale(0.97); }
 
 /******               base                  ******/
 * {
@@ -58,33 +57,39 @@ body {
 
 /*cards-servicios*/
 .art-card {
-  width: 43.75rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: none;
-  align-items: none;
-  gap: none;
-  padding: 1.25rem;
+  align-items: center;
+  gap: 0;
+  max-width: 37.5rem;
+  border-radius: .625rem;
   box-shadow: 0 0 0.9375rem #0000001a;
+  text-align: center;
+  padding: 1.5rem 1rem;
   transition: all .5s ease; }
   .art-card:hover {
-    background-color: #F8F9FA;
     box-shadow: 0 0 0.9375rem #ffb3b0; }
+  .art-card img {
+    max-width: 90%;
+    object-fit: cover;
+    margin: -7.5rem 0 1.875rem 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0.9375rem #0000001a; }
   .art-card .art-card-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: none;
-    gap: none;
-    margin-left: 1.5rem; }
+    max-width: 90%; }
     .art-card .art-card-contenido h2 {
+      display: inline-block;
+      border-bottom: 0.125rem solid #ffb3b0;
+      margin-bottom: 1.5rem;
       font-family: "Poppins", sans-serif;
-      font-size: 1.8rem;
-      font-weight: 500;
-      color: #555555; }
+      font-size: 2rem;
+      color: #555555;
+      text-align: center; }
     .art-card .art-card-contenido p {
       font-family: "Roboto", sans-serif;
-      color: #555555; }
+      color: #555555;
+      margin-bottom: 3rem; }
 
 /******               layout              ******/
 /*footer*/
@@ -276,8 +281,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: none;
-  gap: 3rem;
-  margin: 8rem 5rem; }
+  gap: 5rem;
+  margin: 12rem 3rem; }
 
 .cont-sugerencia {
   background-color: #F8F9FA;
@@ -497,9 +502,6 @@ footer {
     font-size: 1.75rem; }
   .cont-principal .grid-container {
     max-width: 34.375rem; }
-  /********* servicios ****************/
-  .cont-articles {
-    flex-wrap: wrap; }
   /********** sobre *********/
   .cont-sobre {
     width: 85%; }
@@ -551,6 +553,13 @@ footer {
       margin: 5rem auto;
       max-width: 80%; }
   /********** servicios *********/
+  .cont-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    gap: 12.5rem;
+    flex-wrap: wrap; }
   .cont-sugerencia p {
     font-size: 1.25rem; }
   .cont-sugerencia .btn-serv {
@@ -601,23 +610,6 @@ footer {
   /********* header-boostrap ************/
   .container-fluid a .navbar-brand {
     width: 15.625rem; }
-  /********* servicios *********/
-  .cont-articles {
-    margin: 5rem auto; }
-  .art-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: none;
-    align-items: none;
-    gap: none;
-    width: 70%; }
-    .art-card a .art-card-img {
-      width: 100%; }
-    .art-card .art-card-contenido {
-      margin: 1rem 0 0 0;
-      width: 100%; }
-      .art-card .art-card-contenido p {
-        font-size: .875rem; }
   /********* galeria ***********/
   .galeria-titulo h1 {
     font-size: 2.5rem; }
@@ -638,8 +630,14 @@ footer {
   .cont-principal .grid-container {
     margin: 2rem auto 4rem auto; }
   /*********** servicios **********/
-  .cont-sugerencia {
-    padding: 3rem; }
+  .cont-articles {
+    margin: 12rem 2rem; }
+  .art-card .art-card-contenido p {
+    font-size: .875rem; }
+  /*
+     .cont-sugerencia{
+        padding: 3rem;
+    }*/
   /********** galería ************/
   .cont-galeria h1 {
     font-size: 2.5rem; }
@@ -732,11 +730,13 @@ footer {
       font-size: 3rem; }
   /*********** servicios **********/
   .cont-articles {
-    margin: 3rem auto; }
+    margin: 8rem 1.5rem; }
+  .art-card img {
+    margin-top: -5rem; }
   .art-card .art-card-contenido p {
     font-size: .75rem; }
   .cont-sugerencia {
-    padding: 1.5rem; }
+    padding: 6rem 2rem; }
     .cont-sugerencia p {
       font-size: 1rem; }
   /*********** galeria ************/
@@ -771,10 +771,16 @@ footer {
     width: 6rem;
     padding: .5rem; }
   /********** servicios ***********/
-  .cont-articles .art-card-contenido h2 {
-    font-size: 1.25rem; }
-  .cont-articles .art-card-contenido p {
-    font-size: .75rem; }
+  .cont-articles {
+    margin-top: 6rem; }
+    .cont-articles .art-card img {
+      max-width: 95%;
+      margin-top: -3.75rem; }
+    .cont-articles .art-card .art-card-contenido h2 {
+      font-size: 1.25rem; }
+    .cont-articles .art-card .art-card-contenido .btn-card {
+      width: 6rem;
+      padding: .5rem; }
   .cont-sugerencia .btn-serv {
     width: 6rem;
     padding: .5rem; }

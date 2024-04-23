@@ -23,9 +23,21 @@
     
      /*********** servicios **********/
 
+     .cont-articles{
+        margin: 12rem 2rem;
+     }
+
+     .art-card{
+        .art-card-contenido{
+            p{
+                font-size: .875rem;
+            }
+        }
+    }
+/*
      .cont-sugerencia{
         padding: 3rem;
-    }
+    }*/
 
 
     /********** galería ************/

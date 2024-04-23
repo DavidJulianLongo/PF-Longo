@@ -10,10 +10,9 @@
     text-align: center;
     transition: all .3s ease;
     &:hover{
-        background-color: map-get($colors, rosa);
+        background-color: map-get($colors, rosaOscuro);
     }
     &:active{
         transform: scale(.97);
-        background-color: map-get($colors, rosaOscuro);
     }
 }

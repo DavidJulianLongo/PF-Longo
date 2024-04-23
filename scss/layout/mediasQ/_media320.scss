@@ -23,15 +23,23 @@
     /********** servicios ***********/
 
     .cont-articles{
+        margin-top: 6rem;
+        .art-card{
+            img{
+                max-width: 95%;
+                margin-top: -3.75rem;
+            }
         .art-card-contenido{
             h2{
                 font-size: 1.25rem;
             }
-            p{
-                font-size: .75rem;
+            .btn-card{
+                width: 6rem;
+                padding: .5rem;
             }
         }
     }
+}
     
     .cont-sugerencia{
         .btn-serv{

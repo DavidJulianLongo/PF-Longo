@@ -1,6 +1,6 @@
 .cont-articles{
-    @include flex(row, center, none, 3rem);
-    margin: 8rem 5rem;
+    @include flex(row, center, none, 5rem);
+    margin: 12rem 3rem;
 }
 
 .cont-sugerencia{

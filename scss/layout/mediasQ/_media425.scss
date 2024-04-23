@@ -37,10 +37,12 @@
     /*********** servicios **********/
 
     .cont-articles{
-        margin: 3rem auto;
+        margin: 8rem 1.5rem;
     }
-
     .art-card{
+        img{
+            margin-top: -5rem;
+        }
         .art-card-contenido{
             p{
                 font-size: .75rem;
@@ -49,7 +51,7 @@
     }
 
     .cont-sugerencia{
-        padding: 1.5rem;
+        padding: 6rem 2rem;
         p{
             font-size: 1rem;
         }
