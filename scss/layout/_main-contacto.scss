@@ -46,6 +46,7 @@
         width: 100%;
         padding: 2.5rem;
         background-color: map-get($colors, gris);
+        border-radius: 1rem;
         box-shadow: 0 0 .9375rem map-get($colors, box-sombra);
         .input-box{
             display: flex;
