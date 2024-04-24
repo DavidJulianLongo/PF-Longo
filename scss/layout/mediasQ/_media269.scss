@@ -1,40 +1,32 @@
-@media (max-width: 269px){
+@media (max-width: 269px) {
 
     /********* header-boostrap ************/
-    .container-fluid{
+    .container-fluid {
         padding: .625rem .8rem;
-        a .navbar-brand{
+
+        a .navbar-brand {
             width: 6.25rem;
             margin-right: 0;
         }
     }
-   
+
 
     /************ index  ************/
-    
-    .cont-principal{
+
+    .cont-principal {
         margin-bottom: 6.25rem;
-        .presentacion{
-            h1{
+
+        .presentacion {
+            h1 {
                 font-size: 2rem;
             }
-            h2{
+
+            h2 {
                 font-size: 1rem;
                 padding: .5rem;
             }
-            .btn-a{
-                font-size: .625rem;
-                width: 5rem;
-                padding: .5rem;
-            }
-        }
-    } 
 
-
-    /********** servicios ****************/
-    .art-card{
-        .art-card-contenido{
-            .btn-card{
+            .btn-a {
                 font-size: .625rem;
                 width: 5rem;
                 padding: .5rem;
@@ -42,8 +34,39 @@
         }
     }
 
-    .cont-sugerencia{
-        .btn-serv{
+    .banner {
+        .banner-contenido {
+            padding: 1rem;
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: .75rem;
+            }
+            .btn-banner {
+                a {
+                    font-size: .625rem;
+                    width: 5rem;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+
+
+    /********** servicios ****************/
+    .art-card {
+        .art-card-contenido {
+            .btn-card {
+                font-size: .625rem;
+                width: 5rem;
+                padding: .5rem;
+            }
+        }
+    }
+
+    .cont-sugerencia {
+        .btn-serv {
             font-size: .625rem;
             width: 5rem;
             padding: .5rem;
@@ -52,23 +75,24 @@
 
 
     /*********** sobre *******************/
-    .cont-sobre{
-        .art-sobre{
-            .art-contenido-sobre{
-                p{
+    .cont-sobre {
+        .art-sobre {
+            .art-contenido-sobre {
+                p {
                     font-size: .75rem;
-                } 
+                }
+
                 .btn-sobre {
                     font-size: .625rem;
-                }   
+                }
             }
         }
     }
 
 
     /************* footer *****************/
-    footer{
-        .footer-cont{
+    footer {
+        .footer-cont {
             @include flex(row, space-between, none, 1rem);
 
         }

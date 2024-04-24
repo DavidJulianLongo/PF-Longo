@@ -2,7 +2,7 @@
 /******               utilities               ******/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
-.art-card .art-card-contenido .btn-card, .cont-principal .presentacion .btn-a, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre, .cont-sugerencia .btn-serv {
+.art-card .art-card-contenido .btn-card, .cont-principal .presentacion .btn-a, .banner .banner-contenido .btn-banner a, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre, .cont-sugerencia .btn-serv {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: .75rem;
@@ -13,9 +13,9 @@
   border-radius: .5rem;
   text-align: center;
   transition: all .3s ease; }
-  .art-card .art-card-contenido .btn-card:hover, .cont-principal .presentacion .btn-a:hover, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:hover, .cont-sugerencia .btn-serv:hover {
+  .art-card .art-card-contenido .btn-card:hover, .cont-principal .presentacion .btn-a:hover, .banner .banner-contenido .btn-banner a:hover, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:hover, .cont-sugerencia .btn-serv:hover {
     background-color: #ffb3b0; }
-  .art-card .art-card-contenido .btn-card:active, .cont-principal .presentacion .btn-a:active, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:active, .cont-sugerencia .btn-serv:active {
+  .art-card .art-card-contenido .btn-card:active, .cont-principal .presentacion .btn-a:active, .banner .banner-contenido .btn-banner a:active, .cont-sobre .art-sobre .art-contenido-sobre .btn-sobre:active, .cont-sugerencia .btn-serv:active {
     transform: scale(0.97); }
 
 /******               base                  ******/
@@ -226,7 +226,7 @@ footer {
     .cont-principal .grid-container .item {
       border: 0.1875rem solid #F8F9FA;
       border-radius: 50%;
-      box-shadow: 0.625rem 0.625rem 0.625rem 0 #EDC8C3;
+      box-shadow: 0.625rem 0.625rem 0.625rem 0 #0000001a;
       transition: all 0.8s cubic-bezier(0.39, 0.575, 0.565, 1); }
       .cont-principal .grid-container .item:hover {
         z-index: 1;
@@ -252,6 +252,43 @@ footer {
       grid-area: -1/3/-9/11; }
     .cont-principal .grid-container .item7 {
       grid-area: -2/-2/-8/-8; }
+
+.banner {
+  background-image: linear-gradient(to top, transparent 55%, #fdfdfd), url("./../assets/img/banner/banner3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31.25rem;
+  text-align: center;
+  align-content: center; }
+  .banner .banner-contenido {
+    border-radius: 1rem;
+    backdrop-filter: blur(3px);
+    background-color: #00000021;
+    padding: 2rem;
+    max-width: 50rem;
+    margin: 0 auto; }
+    .banner .banner-contenido h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 3rem;
+      color: #fdfdfd;
+      margin-bottom: 2rem; }
+    .banner .banner-contenido p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      color: #F8F9FA;
+      margin-bottom: 2rem; }
+    .banner .banner-contenido .btn-banner {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: none;
+      gap: 1.25rem;
+      flex-wrap: wrap; }
+      .banner .banner-contenido .btn-banner a {
+        background-color: #F8F9FA;
+        color: #555555;
+        box-shadow: 0 0 0.9375rem #ffb3b0; }
 
 /*main-sobre*/
 .cont-sobre {
@@ -434,7 +471,9 @@ footer {
 .galeria img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  border-radius: .75rem;
+  box-shadow: 0 0 0.9375rem #0000001a; }
   .galeria img:nth-child(1) {
     grid-column: 1/3;
     grid-row: 1/3; }
@@ -474,7 +513,9 @@ footer {
 .galeria-familiar img {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  border-radius: .75rem;
+  box-shadow: 0 0 0.9375rem #0000001a; }
   .galeria-familiar img:nth-child(2) {
     grid-column: 2/4;
     grid-row: 1/3; }
@@ -553,6 +594,8 @@ footer {
     .cont-principal .grid-container {
       margin: 5rem auto;
       max-width: 80%; }
+  .banner .banner-contenido {
+    margin: 0 2rem; }
   /********** servicios *********/
   .cont-articles {
     display: flex;
@@ -630,15 +673,15 @@ footer {
     font-size: 3.5rem; }
   .cont-principal .grid-container {
     margin: 2rem auto 4rem auto; }
+  .banner .banner-contenido {
+    margin: 0 1rem; }
+    .banner .banner-contenido h2 {
+      font-size: 2rem; }
   /*********** servicios **********/
   .cont-articles {
     margin: 12rem 2rem; }
   .art-card .art-card-contenido p {
     font-size: .875rem; }
-  /*
-     .cont-sugerencia{
-        padding: 3rem;
-    }*/
   /********** galería ************/
   .cont-galeria h1 {
     font-size: 2.5rem; }
@@ -729,6 +772,10 @@ footer {
     margin-top: 0; }
     .cont-principal .presentacion h1 {
       font-size: 3rem; }
+  .banner .banner-contenido {
+    padding: 2rem 1rem; }
+    .banner .banner-contenido p {
+      font-size: .875rem; }
   /*********** servicios **********/
   .cont-articles {
     margin: 8rem 1.5rem; }
@@ -769,6 +816,9 @@ footer {
     font-size: 1.5rem;
     padding: .5rem; }
   .cont-principal .presentacion .btn-a {
+    width: 6rem;
+    padding: .5rem; }
+  .banner .banner-contenido .btn-banner a {
     width: 6rem;
     padding: .5rem; }
   /********** servicios ***********/
@@ -827,6 +877,16 @@ footer {
       font-size: 1rem;
       padding: .5rem; }
     .cont-principal .presentacion .btn-a {
+      font-size: .625rem;
+      width: 5rem;
+      padding: .5rem; }
+  .banner .banner-contenido {
+    padding: 1rem; }
+    .banner .banner-contenido h2 {
+      font-size: 1.5rem; }
+    .banner .banner-contenido p {
+      font-size: .75rem; }
+    .banner .banner-contenido .btn-banner a {
       font-size: .625rem;
       width: 5rem;
       padding: .5rem; }

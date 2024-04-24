@@ -20,6 +20,16 @@
             margin: 2rem auto 4rem auto; 
         }  
     }
+
+
+    .banner {
+        .banner-contenido{
+            margin: 0 1rem;
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
     
      /*********** servicios **********/
 
@@ -34,10 +44,7 @@
             }
         }
     }
-/*
-     .cont-sugerencia{
-        padding: 3rem;
-    }*/
+
 
 
     /********** galería ************/
