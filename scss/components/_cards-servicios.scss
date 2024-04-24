@@ -15,6 +15,7 @@
         margin: -7.5rem 0 1.875rem 0;
         border-radius: inherit;
         box-shadow: 0 0 .9375rem map-get($colors, box-sombra);
+        transition: all .5s ease;
     }
     .art-card-contenido{
         max-width: 90%;
@@ -34,6 +35,12 @@
         }
         .btn-card{
             @extend %btn;
+            background-color: map-get($colors, gris);
+            color: map-get($colors, grisOscuro);
+            box-shadow: 0 0 .5rem map-get($colors, rosaOscuro);
+            &:hover{
+                color: map-get($colors, blanco);
+            }
         }
     }
 }

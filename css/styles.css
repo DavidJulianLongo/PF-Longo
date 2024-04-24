@@ -75,7 +75,8 @@ body {
     object-fit: cover;
     margin: -7.5rem 0 1.875rem 0;
     border-radius: inherit;
-    box-shadow: 0 0 0.9375rem #0000001a; }
+    box-shadow: 0 0 0.9375rem #0000001a;
+    transition: all .5s ease; }
   .art-card .art-card-contenido {
     max-width: 90%; }
     .art-card .art-card-contenido h2 {
@@ -90,6 +91,12 @@ body {
       font-family: "Roboto", sans-serif;
       color: #555555;
       margin-bottom: 3rem; }
+    .art-card .art-card-contenido .btn-card {
+      background-color: #F8F9FA;
+      color: #555555;
+      box-shadow: 0 0 0.5rem #ffb3b0; }
+      .art-card .art-card-contenido .btn-card:hover {
+        color: #fdfdfd; }
 
 /******               layout              ******/
 /*footer*/
@@ -103,7 +110,7 @@ footer {
     align-items: none;
     gap: 1rem;
     flex-wrap: wrap;
-    margin: 0 auto 6.25rem auto;
+    margin: 0 auto 2.5rem auto;
     width: 85%; }
   footer .footer-nav, footer .footer-contacto, footer .redes {
     width: 13.75rem;
@@ -186,7 +193,7 @@ footer {
   justify-content: space-evenly;
   align-items: none;
   gap: none;
-  margin: 3.125rem 0 9.375rem 0; }
+  margin: 3.125rem 0 5rem 0; }
   .cont-principal .presentacion {
     display: flex;
     flex-direction: column;
@@ -288,7 +295,9 @@ footer {
       .banner .banner-contenido .btn-banner a {
         background-color: #F8F9FA;
         color: #555555;
-        box-shadow: 0 0 0.9375rem #ffb3b0; }
+        box-shadow: 0 0 0.5rem #ffb3b0; }
+        .banner .banner-contenido .btn-banner a:hover {
+          color: #fdfdfd; }
 
 /*main-sobre*/
 .cont-sobre {
@@ -554,6 +563,8 @@ footer {
 /*media991*/
 @media (max-width: 991px) {
   /****** header-bootstrap ********/
+  .cont-header {
+    position: relative; }
   .container-fluid .navbar-toggler {
     border: none; }
     .container-fluid .navbar-toggler:focus {
@@ -579,7 +590,7 @@ footer {
     align-items: none;
     gap: none;
     padding: 0;
-    margin: 2rem 0 9.375rem 0; }
+    margin: 2rem 0 3.125rem 0; }
     .cont-principal .presentacion h1 {
       background-color: #F8F9FA;
       font-size: 4rem;
@@ -669,10 +680,12 @@ footer {
     .container-fluid a .navbar-brand {
       max-width: 12.5rem; }
   /************ index ***************/
-  .cont-principal .presentacion h1 {
-    font-size: 3.5rem; }
-  .cont-principal .grid-container {
-    margin: 2rem auto 4rem auto; }
+  .cont-principal {
+    margin-bottom: 1.875rem; }
+    .cont-principal .presentacion h1 {
+      font-size: 3.5rem; }
+    .cont-principal .grid-container {
+      margin: 2rem auto 4rem auto; }
   .banner .banner-contenido {
     margin: 0 1rem; }
     .banner .banner-contenido h2 {
@@ -769,8 +782,7 @@ footer {
     font-size: .875rem; }
   /*********** index **************/
   .cont-principal {
-    margin-top: 1rem;
-    margin-bottom: 1.875rem; }
+    margin-top: 1rem; }
     .cont-principal .presentacion h1 {
       font-size: 3rem; }
   .banner .banner-contenido {
@@ -871,7 +883,7 @@ footer {
       margin-right: 0; }
   /************ index  ************/
   .cont-principal {
-    margin-bottom: 6.25rem; }
+    margin-bottom: 1.25rem; }
     .cont-principal .presentacion h1 {
       font-size: 2rem; }
     .cont-principal .presentacion h2 {

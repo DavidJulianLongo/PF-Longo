@@ -1,6 +1,6 @@
 .cont-principal {
     @include flex(row, space-evenly, none, none);
-    margin: 3.125rem 0 9.375rem 0;
+    margin: 3.125rem 0 5rem 0;
 
     .presentacion {
         @include flex(column, center, none, none);
@@ -100,33 +100,41 @@
     height: 44.6875rem;
     text-align: center;
     align-content: center;
-    .banner-contenido{
+
+    .banner-contenido {
         border-radius: 1rem;
         backdrop-filter: blur(3px);
         background-color: #00000077;
         padding: 2rem;
         max-width: 50rem;
         margin: 0 auto;
-        h2{
+
+        h2 {
             font-family: $font-titulo;
             font-size: 3rem;
             color: map-get($colors, blanco);
             margin-bottom: 2rem;
         }
-        p{
+
+        p {
             font-family: $font;
             font-weight: 500;
             color: map-get($colors, gris);
             margin-bottom: 2rem;
         }
-        .btn-banner{
+
+        .btn-banner {
             @include flex(row, center, none, 1.25rem);
             flex-wrap: wrap;
-            a{
+
+            a {
                 @extend %btn;
                 background-color: map-get($colors, gris);
                 color: map-get($colors, grisOscuro);
-                box-shadow: 0 0 .9375rem map-get($colors, rosaOscuro);
+                box-shadow: 0 0 .5rem map-get($colors, rosaOscuro);
+                &:hover {
+                    color: map-get($colors, blanco);
+                }
             }
         }
     }

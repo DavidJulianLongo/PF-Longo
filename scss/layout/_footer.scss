@@ -4,7 +4,7 @@ footer{
     .footer-cont{
         @include flex(row, space-between, none, 1rem);
         flex-wrap: wrap;
-        margin: 0 auto 6.25rem auto;
+        margin: 0 auto 2.5rem auto;
         width: 85%;
     }
     .footer-nav{

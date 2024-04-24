@@ -11,6 +11,7 @@
    
     /************ index ***************/
     .cont-principal{
+        margin-bottom: 1.875rem;
         .presentacion{
             h1{
                 font-size: 3.5rem;
@@ -143,7 +144,6 @@
     footer{
         .footer-cont{
             @include flex(column, space-between, center, 1rem);
-
         }
     } 
 }  

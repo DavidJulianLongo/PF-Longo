@@ -1,7 +1,9 @@
 @media (max-width: 991px) {
 
     /****** header-bootstrap ********/
-   
+    .cont-header{
+        position: relative;
+    }
     .container-fluid {
         .navbar-toggler {
             border: none;
@@ -39,7 +41,7 @@
     .cont-principal {
         @include flex(column-reverse, center, none, none);
         padding: 0;
-        margin: 2rem 0 9.375rem 0;
+        margin: 2rem 0 3.125rem 0;
         .presentacion {
             h1 {
                 background-color: map-get($colors, gris);
