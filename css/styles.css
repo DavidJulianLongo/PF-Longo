@@ -186,7 +186,7 @@ footer {
   justify-content: space-evenly;
   align-items: none;
   gap: none;
-  margin: 3.125rem 0 15.625rem 0; }
+  margin: 3.125rem 0 9.375rem 0; }
   .cont-principal .presentacion {
     display: flex;
     flex-direction: column;
@@ -264,7 +264,7 @@ footer {
   .banner .banner-contenido {
     border-radius: 1rem;
     backdrop-filter: blur(3px);
-    background-color: #00000021;
+    background-color: #00000077;
     padding: 2rem;
     max-width: 50rem;
     margin: 0 auto; }
